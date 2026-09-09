@@ -3,6 +3,7 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 import { AppProviders } from '@/app/providers';
 import { DestinationPage } from './DestinationPage';
+import { bundledSeed } from '@/data/json/JsonDataRepository';
 
 function renderDestination(id: string) {
   return render(
@@ -34,7 +35,10 @@ describe('DestinationPage', () => {
     const uluwatu = within(surfSection).getByRole('link', { name: /uluwatu/i });
 
     expect(uluwatu).toHaveAttribute('href', '/breaks/uluwatu');
-    expect(within(surfSection).getAllByRole('link')).toHaveLength(6);
+    // Derived from the seed: Bali's atlas gained the Canggu breaks after this was first
+    // written, and a hard-coded count would only have recorded the old data.
+    const baliBreaks = bundledSeed.breaks.filter((b) => b.destinationId === 'bali');
+    expect(within(surfSection).getAllByRole('link')).toHaveLength(baliBreaks.length);
   });
 
   it('shows only that destination properties', async () => {

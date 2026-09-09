@@ -6,6 +6,9 @@ import { parseProfile } from './surferProfileStore';
 
 beforeEach(() => {
   window.localStorage.clear();
+  // <App /> uses BrowserRouter and jsdom shares one history per file, so URL state would
+  // otherwise leak from any test that navigates into the next one.
+  window.history.pushState({}, '', '/');
 });
 
 /** Waits for the destination cards themselves, not just the section heading. */

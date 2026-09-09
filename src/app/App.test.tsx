@@ -1,6 +1,12 @@
 import { render, screen, within } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it } from 'vitest';
 import { App } from './App';
+
+beforeEach(() => {
+  // <App /> uses BrowserRouter and jsdom shares one history per file; reset it so a test
+  // that navigates cannot strand the next one on the wrong route.
+  window.history.pushState({}, '', '/');
+});
 
 describe('App shell', () => {
   it('opens on the destination surface, not on a property search', async () => {

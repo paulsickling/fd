@@ -133,6 +133,37 @@ describe('seed factual integrity', () => {
     }
   });
 
+  it('puts a genuinely nearby break on every listing, since that is the whole claim', () => {
+    // Caught a real bug: the Canggu and Pererenan listings had a single edge pointing at
+    // Uluwatu, 80 minutes away, because Canggu's own breaks were missing from the atlas.
+    // The detail page rendered "the surf from this door" above an 80-minute drive, which
+    // is the one thing this product cannot be caught doing.
+    const TOO_FAR_MINUTES = 45;
+
+    for (const property of properties) {
+      const closest = Math.min(...property.nearbyBreaks.map((edge) => edge.travelMinutes));
+      expect(
+        closest,
+        `${property.id} (${property.locality}) has no break within ${TOO_FAR_MINUTES} min`,
+      ).toBeLessThanOrEqual(TOO_FAR_MINUTES);
+    }
+  });
+
+  it('covers every locality with breaks from its own part of the island', () => {
+    // A locality whose only surf is an hour away is a gap in the atlas, not a feature of
+    // the property. Assert per-locality rather than per-property so the gap is named.
+    const worstByLocality = new Map<string, number>();
+    for (const property of properties) {
+      const closest = Math.min(...property.nearbyBreaks.map((edge) => edge.travelMinutes));
+      const key = `${property.destinationId}/${property.locality}`;
+      worstByLocality.set(key, Math.max(worstByLocality.get(key) ?? 0, closest));
+    }
+
+    for (const [locality, worst] of worstByLocality) {
+      expect(worst, `${locality} is poorly served by the atlas`).toBeLessThanOrEqual(45);
+    }
+  });
+
   it('has properties walkable to a break, so the dawn-patrol treatment can render', () => {
     const walkable = properties.filter((p) =>
       p.nearbyBreaks.some((edge) => edge.travelMode === 'walk' && edge.travelMinutes <= 10),

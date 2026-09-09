@@ -392,8 +392,18 @@
     "description": "A three-bedroom villa on a field lane between Canggu and Berawa, sized for use rather than display. The roof terrace looks over rice rather than road, which is the difference that matters on this side of the island. Twenty-five-year Hak Sewa lease, notarised and registered.",
     "nearbyBreaks": [
       {
-        "breakId": "uluwatu",
-        "travelMinutes": 80,
+        "breakId": "batu-bolong",
+        "travelMinutes": 9,
+        "travelMode": "walk"
+      },
+      {
+        "breakId": "berawa",
+        "travelMinutes": 8,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "echo-beach",
+        "travelMinutes": 12,
         "travelMode": "drive"
       }
     ],
@@ -450,8 +460,13 @@
     "description": "The entry point to this market: a two-bedroom single-storey house on 150 square metres at the quiet end of Pererenan. Everything is open-air except the bedrooms, which is how these houses are meant to work. Twenty-five-year Hak Sewa lease.",
     "nearbyBreaks": [
       {
-        "breakId": "uluwatu",
-        "travelMinutes": 85,
+        "breakId": "echo-beach",
+        "travelMinutes": 7,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "batu-bolong",
+        "travelMinutes": 14,
         "travelMode": "drive"
       }
     ],

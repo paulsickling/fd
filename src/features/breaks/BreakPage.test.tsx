@@ -3,6 +3,7 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 import { AppProviders } from '@/app/providers';
 import { BreakPage } from './BreakPage';
+import { bundledSeed } from '@/data/json/JsonDataRepository';
 
 function renderBreak(id: string) {
   return render(
@@ -86,11 +87,19 @@ describe('BreakPage', () => {
     const nearby = await screen.findByRole('region', { name: /property near uluwatu/i });
     const hrefs = propertyHrefs(nearby);
 
-    expect(hrefs).toHaveLength(4);
+    // Derived from the seed, not hard-coded: the atlas grows as breaks are added, and a
+    // magic number here only records what the data happened to be on the day.
+    const expected = bundledSeed.properties.filter((property) =>
+      property.nearbyBreaks.some((edge) => edge.breakId === 'uluwatu'),
+    );
+    expect(expected.length).toBeGreaterThan(0);
+    expect(hrefs).toHaveLength(expected.length);
     expect(hrefs).toContain('/properties/bali-uluwatu-clifftop-pavilion');
 
     // The seeded edge itself is shown, so the break-to-property hop states its distance.
-    expect(within(nearby).getAllByText(/min (walk|drive|boat) to Uluwatu/i).length).toBe(4);
+    expect(within(nearby).getAllByText(/min (walk|drive|boat) to Uluwatu/i).length).toBe(
+      expected.length,
+    );
   });
 
   it('carries the reverse edge on a second destination too', async () => {
