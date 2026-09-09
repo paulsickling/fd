@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc -b --noEmit"
+    "typecheck": "tsc -b --noEmit",
+    "deploy": "pwsh -NoProfile -File scripts/deploy.ps1"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.62.0",

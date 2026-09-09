@@ -29,8 +29,11 @@ describe('BreakPage', () => {
     renderBreak('uluwatu');
 
     expect(await screen.findByRole('heading', { name: 'Uluwatu', level: 1 })).toBeInTheDocument();
-    expect(await screen.findByText(/left-hand reef break/i)).toBeInTheDocument();
-    expect(await screen.findByText(/advanced.expert/i)).toBeInTheDocument();
+    // The summary line and the stat block both carry the skill range, hence findAllByText.
+    expect(await screen.findByText(/left-hand reef break/i)).toHaveTextContent(
+      /advanced.expert/i,
+    );
+    expect((await screen.findAllByText(/advanced.expert/i)).length).toBeGreaterThan(1);
 
     // Optimal conditions, bottom and paddle-out — the facts a surf guide leads with.
     expect(await screen.findByText('Coral reef')).toBeInTheDocument();

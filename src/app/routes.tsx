@@ -3,6 +3,8 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { DestinationsHome } from '@/features/destinations/DestinationsHome';
 import { DestinationPage } from '@/features/destinations/DestinationPage';
 import { PropertySearchPage } from '@/features/search/PropertySearchPage';
+import { BreakPage } from '@/features/breaks/BreakPage';
+import { PropertyDetailPage } from '@/features/properties/PropertyDetailPage';
 
 /**
  * Route table. Destination comes before property in the hierarchy — that ordering is the
@@ -21,6 +23,8 @@ export function AppRoutes() {
         <Route path="/" element={<DestinationsHome />} />
         <Route path="/destinations/:destinationId" element={<DestinationPage />} />
         <Route path="/properties" element={<PropertySearchPage />} />
+        <Route path="/properties/:propertyId" element={<PropertyDetailPage />} />
+        <Route path="/breaks/:breakId" element={<BreakPage />} />
       </Routes>
     </div>
   );
