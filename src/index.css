@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+/* Property-first palette: light, warm and editorial — deliberately not a dark
+   forecasting tool. See stack.md "Presentation conventions". */
+@theme {
+  --color-sand-50: oklch(0.98 0.008 85);
+  --color-sand-100: oklch(0.96 0.015 82);
+  --color-sand-200: oklch(0.92 0.025 80);
+  --color-ink-700: oklch(0.42 0.02 250);
+  --color-ink-900: oklch(0.23 0.02 250);
+  --color-ocean-500: oklch(0.62 0.11 220);
+  --color-ocean-700: oklch(0.45 0.10 225);
+}
+
+body {
+  background-color: var(--color-sand-50);
+  color: var(--color-ink-900);
+}

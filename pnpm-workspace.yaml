@@ -1,0 +1,5 @@
+# pnpm blocks dependency build scripts by default. esbuild (via Vite and Vitest) needs its
+# postinstall to fetch the platform binary, so it is allowed explicitly here rather than
+# approved interactively — this keeps `pnpm install` reproducible on a fresh clone.
+allowBuilds:
+  esbuild: true
