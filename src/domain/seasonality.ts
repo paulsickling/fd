@@ -121,24 +121,53 @@ export function seasonalComplementarity(a: Seasonality, b: Seasonality): number 
   return weak === 0 ? 1 : covered / weak;
 }
 
-/** Human-readable month span, e.g. "Apr-Oct", handling wrap-around like "Nov-Feb". */
-export function describeMonthRange(months: readonly number[]): string {
-  if (months.length === 0) return 'No reliable season';
-  const sorted = [...months].sort((a, b) => a - b);
-  if (sorted.length === MONTHS_IN_YEAR) return 'Year-round';
+/**
+ * Split a set of months into consecutive runs, treating December as adjacent to January
+ * so a season spanning the new year reads as one run rather than two.
+ */
+export function monthRuns(months: readonly number[]): readonly (readonly number[])[] {
+  const unique = [...new Set(months)].sort((a, b) => a - b);
+  if (unique.length === 0) return [];
 
-  // Detect a wrap-around run (e.g. Nov, Dec, Jan, Feb) by looking for the gap.
-  const isContiguous = sorted.every(
-    (month, index) => index === 0 || month === sorted[index - 1]! + 1,
-  );
-  if (isContiguous) {
-    return `${monthLabel(sorted[0]!)}-${monthLabel(sorted[sorted.length - 1]!)}`;
+  const runs: number[][] = [];
+  for (const month of unique) {
+    const current = runs[runs.length - 1];
+    if (current && month === current[current.length - 1]! + 1) {
+      current.push(month);
+    } else {
+      runs.push([month]);
+    }
   }
 
-  const present = new Set(sorted);
-  // The run start is the month whose predecessor is absent, walking the year cyclically.
-  const start = sorted.find((month) => !present.has(month === 1 ? MONTHS_IN_YEAR : month - 1));
-  const end = sorted.find((month) => !present.has(month === MONTHS_IN_YEAR ? 1 : month + 1));
-  if (start === undefined || end === undefined) return 'Year-round';
-  return `${monthLabel(start)}-${monthLabel(end)}`;
+  // Join December to January when both ends of the year are present.
+  if (runs.length > 1) {
+    const first = runs[0]!;
+    const last = runs[runs.length - 1]!;
+    if (first[0] === 1 && last[last.length - 1] === MONTHS_IN_YEAR) {
+      runs.pop();
+      runs[0] = [...last, ...first];
+      // The wrapped run belongs at the front, before any mid-year run.
+      runs.unshift(runs.splice(0, 1)[0]!);
+    }
+  }
+
+  return runs;
+}
+
+/**
+ * Human-readable month span, e.g. "Apr-Oct", handling wrap-around like "Nov-Feb" and
+ * reporting every run rather than only the first: a season of April-June plus
+ * September-October must not silently read as "Apr-Jun".
+ */
+export function describeMonthRange(months: readonly number[]): string {
+  if (months.length === 0) return 'No reliable season';
+  if (new Set(months).size === MONTHS_IN_YEAR) return 'Year-round';
+
+  return monthRuns(months)
+    .map((run) => {
+      const start = run[0]!;
+      const end = run[run.length - 1]!;
+      return start === end ? monthLabel(start) : `${monthLabel(start)}-${monthLabel(end)}`;
+    })
+    .join(', ');
 }

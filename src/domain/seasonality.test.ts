@@ -164,4 +164,19 @@ describe('describeMonthRange', () => {
     expect(describeMonthRange([])).toBe('No reliable season');
     expect(describeMonthRange([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])).toBe('Year-round');
   });
+
+  it('reports every run rather than silently dropping the shoulder months', () => {
+    // The sweet spot for a Bali-shaped season is two separate runs either side of the
+    // crowd peak. Collapsing that to "Apr-Jun" would under-report the shoulder.
+    expect(describeMonthRange([4, 5, 6, 9, 10])).toBe('Apr-Jun, Sep-Oct');
+  });
+
+  it('renders a single isolated month without a dash', () => {
+    expect(describeMonthRange([7])).toBe('Jul');
+    expect(describeMonthRange([3, 7, 8])).toBe('Mar, Jul-Aug');
+  });
+
+  it('still joins a wrapped run when other runs are present', () => {
+    expect(describeMonthRange([11, 12, 1, 6])).toBe('Nov-Jan, Jun');
+  });
 });
