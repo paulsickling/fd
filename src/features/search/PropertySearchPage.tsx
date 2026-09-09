@@ -1,7 +1,10 @@
 import { useCallback, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { useDestinations, useProperties, useTenureRegimes } from '@/data/queries';
+import { useBreaks, useDestinations, useProperties, useTenureRegimes } from '@/data/queries';
 import { PropertyCard } from '@/components/PropertyCard';
+import { MatchBadge } from '@/components/MatchBadge';
+import { useSurferProfile } from '@/features/profile/surferProfileContext';
+import { rankProperties } from '@/domain/matching';
 import { SearchFilters } from './SearchFilters';
 import { criteriaFromSearchParams, criteriaToSearchParams } from '@/domain/criteriaUrl';
 import type { PropertySearchCriteria } from '@/domain/filters';
@@ -25,6 +28,8 @@ export function PropertySearchPage() {
   const destinations = useDestinations();
   const regimes = useTenureRegimes();
   const properties = useProperties(criteria);
+  const breaks = useBreaks();
+  const { profile } = useSurferProfile();
 
   const applyCriteria = useCallback(
     (next: PropertySearchCriteria) => {
@@ -37,6 +42,22 @@ export function PropertySearchPage() {
   const clearCriteria = useCallback(() => {
     setSearchParams(new URLSearchParams(), { replace: true });
   }, [setSearchParams]);
+
+  /**
+   * With a profile set, the same result set is re-ordered by match and each card explains
+   * its score. With none, the repository's own ordering stands — the profile is a lens on
+   * the results, never a filter that hides listings.
+   */
+  const ranked = useMemo(() => {
+    const found = properties.data ?? [];
+    if (!profile || !breaks.data) {
+      return found.map((property) => ({ property, match: null }));
+    }
+    return rankProperties(found, breaks.data, profile).map(({ property, match }) => ({
+      property,
+      match,
+    }));
+  }, [properties.data, breaks.data, profile]);
 
   const tenureLabels = useMemo(() => {
     const labels = new Map<TenureTypeId, string>();
@@ -89,7 +110,7 @@ export function PropertySearchPage() {
 
           {properties.data && properties.data.length > 0 ? (
             <ul className="grid gap-x-8 gap-y-14 sm:grid-cols-2 xl:grid-cols-3">
-              {properties.data.map((property) => (
+              {ranked.map(({ property, match }) => (
                 <li key={property.id}>
                   <PropertyCard
                     property={property}
@@ -97,6 +118,7 @@ export function PropertySearchPage() {
                       ? { tenureLabel: tenureLabels.get(property.tenure)! }
                       : {})}
                   />
+                  {match ? <MatchBadge match={match} className="mt-2" /> : null}
                 </li>
               ))}
             </ul>

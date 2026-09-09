@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { SiteHeader } from '@/components/SiteHeader';
+import { SurferProfilePanel } from '@/features/profile/SurferProfilePanel';
 import { DestinationsHome } from '@/features/destinations/DestinationsHome';
 import { DestinationPage } from '@/features/destinations/DestinationPage';
 import { PropertySearchPage } from '@/features/search/PropertySearchPage';
@@ -19,6 +20,7 @@ export function AppRoutes() {
   return (
     <div className="min-h-screen">
       <SiteHeader />
+      <SurferProfilePanel />
       <Routes>
         <Route path="/" element={<DestinationsHome />} />
         <Route path="/destinations/:destinationId" element={<DestinationPage />} />

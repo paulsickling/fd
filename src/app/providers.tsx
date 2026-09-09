@@ -1,6 +1,7 @@
 import { type ReactNode, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RepositoryProvider } from '@/data/RepositoryProvider';
+import { SurferProfileProvider } from '@/features/profile/SurferProfileProvider';
 import type { DataRepository } from '@/data/DataRepository';
 
 /**
@@ -32,7 +33,9 @@ export function AppProviders({
 
   return (
     <QueryClientProvider client={queryClient}>
-      <RepositoryProvider {...(repository ? { repository } : {})}>{children}</RepositoryProvider>
+      <RepositoryProvider {...(repository ? { repository } : {})}>
+        <SurferProfileProvider>{children}</SurferProfileProvider>
+      </RepositoryProvider>
     </QueryClientProvider>
   );
 }

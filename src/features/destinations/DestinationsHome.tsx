@@ -1,8 +1,13 @@
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useBreaks, useDestinations } from '@/data/queries';
 import { destinationSeasonality, describeMonthRange, peakSurfMonths, buildOverlay } from '@/domain/seasonality';
 import { formatAccess, formatPriceRange, formatSkill } from '@/domain/format';
 import type { Destination, SurfBreak } from '@/domain/types';
+import { MatchBadge } from '@/components/MatchBadge';
+import { useSurferProfile } from '@/features/profile/surferProfileContext';
+import { rankDestinations } from '@/domain/matching';
+import type { MatchResult } from '@/domain/matching';
 
 /**
  * The discovery surface (SPEC.md CAP-1).
@@ -14,6 +19,23 @@ import type { Destination, SurfBreak } from '@/domain/types';
 export function DestinationsHome() {
   const destinations = useDestinations();
   const breaks = useBreaks();
+  const { profile } = useSurferProfile();
+
+  /**
+   * The location-free half of CAP-2: with a profile set, the destinations themselves are
+   * ranked by fit and each says why. This is the query with no location in it — the buyer
+   * states how they surf and the product tells them where to go.
+   */
+  const ordered = useMemo(() => {
+    const found = destinations.data ?? [];
+    if (!profile || !breaks.data) {
+      return found.map((destination) => ({ destination, match: null as MatchResult | null }));
+    }
+    return rankDestinations(found, breaks.data, profile).map(({ destination, match }) => ({
+      destination,
+      match: match as MatchResult | null,
+    }));
+  }, [destinations.data, breaks.data, profile]);
 
   return (
     <main>
@@ -36,7 +58,7 @@ export function DestinationsHome() {
           id="destinations-heading"
           className="border-t border-sand-200 pt-8 text-xs uppercase tracking-[0.2em] text-ink-700"
         >
-          Three destinations
+          {profile ? 'Ranked for how you surf' : 'Three destinations'}
         </h2>
 
         {destinations.isPending || breaks.isPending ? (
@@ -51,12 +73,13 @@ export function DestinationsHome() {
 
         {destinations.data && breaks.data ? (
           <ul className="mt-8 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-            {destinations.data.map((destination) => (
+            {ordered.map(({ destination, match }) => (
               <li key={destination.id}>
                 <DestinationCard
                   destination={destination}
                   breaks={breaks.data.filter((b) => b.destinationId === destination.id)}
                 />
+                {match ? <MatchBadge match={match} className="mt-3" /> : null}
               </li>
             ))}
           </ul>
