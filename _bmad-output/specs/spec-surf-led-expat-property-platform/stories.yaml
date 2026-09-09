@@ -1,0 +1,158 @@
+- id: "1"
+  title: Project scaffold and build guardrails
+  description: >-
+    Stand up Vite + React 19 + TypeScript + Tailwind + React Router + TanStack Query
+    with Vitest and RTL, the folder structure from stack.md, and the ESLint rule that
+    forbids components importing JSON or calling fetch.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: >-
+    Use pnpm. TypeScript strict. The no-restricted-imports ESLint rule is not
+    optional — it is what enforces the CAP-7 constraint at build time. Verify
+    `pnpm dev`, `pnpm test` and `pnpm lint` all work before calling this done.
+
+- id: "2"
+  title: Domain types and the swappable data layer
+  description: >-
+    Implement every type in data-model.md, the DataRepository interface, a
+    JsonDataRepository, a RemoteDataRepository stub, the single composition point that
+    selects one, and the shared contract test suite both must pass. Satisfies CAP-7.
+  spec_checkpoint: true
+  done_checkpoint: false
+  invoke_dev_with: >-
+    This is the architectural bet of the whole PoC — the client demo turns on being
+    able to point at one file and show the swap. Every repository method is async even
+    under JSON. Filtering, sorting and match scoring live behind the interface, never
+    in components. The contract suite must run against both adapters from one shared
+    definition, not two copies.
+
+- id: "3"
+  title: Seed the surf atlas and tenure regimes
+  description: >-
+    Author the surf break JSON for Bali, Ko Samui and the Mentawais plus the Indonesian
+    and Thai tenure regime records, grounded in research-notes.md. Static atlas layer
+    only — no forecast fields.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: >-
+    Every factual field must trace to research-notes.md — do not invent break
+    characteristics. Seasonality arrays must reproduce the real inversion: Bali peaking
+    Apr–Oct, Ko Samui peaking Nov–Feb, Mentawais Mar–Nov. Tenure riskNote text must be
+    honest and specific (Hak Pakai tied to visa status; Thai auto-renewal clauses
+    unenforceable), not generic legalese.
+
+- id: "4"
+  title: Seed the property listings
+  description: >-
+    Author roughly 24 property records across the three destinations with original copy,
+    researched-realistic pricing, tenure, nearby-break edges and licensed imagery with
+    credits.
+  spec_checkpoint: false
+  done_checkpoint: true
+  invoke_dev_with: >-
+    Prices must sit inside the researched market bands and reflect the real 20–40%
+    sea-view premium. Listing copy is written fresh — never copied from a portal.
+    Every image needs a working src, alt, credit and creditUrl from a properly-licensed
+    free source. Include at least two walk-to-the-break properties so the "dawn patrol
+    on foot" treatment has something to render.
+
+- id: "5"
+  title: Destination-first discovery surface
+  description: >-
+    Build the landing surface and per-destination pages carrying surf profile, tenure
+    regime and the destination's property grid. Satisfies CAP-1.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: >-
+    Destination comes before property in the navigation hierarchy — this is the whole
+    premise. Property-first visual language: photography-led, light and editorial, not
+    a dark data tool.
+
+- id: "6"
+  title: Property search with URL-reflected filters
+  description: >-
+    Build the search surface with destination, price, bedrooms, type, tenure and surf
+    attribute filters, with all filter state reflected in the URL. Covers the
+    destination-led half of CAP-2.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: >-
+    Filter predicates belong in domain/ as pure functions and run behind the
+    repository, not in components. A shared URL must reproduce the exact result set.
+
+- id: "7"
+  title: Property detail page with surf intelligence panel
+  description: >-
+    Build the hero-led listing detail page carrying price, tenure, specification, and
+    the nearby-breaks panel with the paddle-out headline stat. Satisfies CAP-3.
+  spec_checkpoint: false
+  done_checkpoint: true
+  invoke_dev_with: >-
+    Every surf fact renders from the atlas via the break edge — nothing about surf is
+    authored per listing. The headline stat ("3 breaks within 15 min · dawn patrol on
+    foot") is computed from nearbyBreaks travel time and mode. This is the first
+    screen a client would actually see; it must look like premium real estate.
+
+- id: "8"
+  title: Surf break pages and bidirectional navigation
+  description: >-
+    Give each break its own page showing type, direction, skill, optimal conditions,
+    hazards and crowd, listing the properties near it. Satisfies CAP-4.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: >-
+    Property → break → property navigation must work with no dead ends; cover that
+    round trip with a test. Aliases must be displayed (Lances Right / HT's / Hollow
+    Trees) and should resolve in search.
+
+- id: "9"
+  title: Twelve-month seasonality overlay
+  description: >-
+    Build the signature graphic overlaying swell, weather and crowd across twelve
+    months on each destination page. Satisfies CAP-5.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: >-
+    This is the demo centrepiece — comparing Bali against Ko Samui must make the
+    inverted seasons immediately obvious. Must read correctly at mobile width, and
+    colour cannot be the only carrier of meaning. Build it as inline SVG rather than
+    adding a charting dependency.
+
+- id: "10"
+  title: Surfer profile, match scoring and location-free search
+  description: >-
+    Add the opt-in surfer profile, the weighted match scoring in domain/, and the
+    surf-first search that takes no location and returns ranked destinations with
+    reasons. Satisfies CAP-6 and the remaining half of CAP-2.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: >-
+    The profile is never a gate — every screen stays fully usable with none set;
+    persist it to localStorage. Each scoring signal must emit a human-readable reason
+    string and the UI shows the reason, not just a number. Test that a beginner
+    longboarder and an advanced surfer get materially different orderings of the same
+    dataset.
+
+- id: "11"
+  title: Stylised destination map
+  description: >-
+    Render the illustrative per-destination map plotting breaks and properties from
+    seeded unitless coordinates, with markers linking through. Satisfies CAP-9.
+  spec_checkpoint: false
+  done_checkpoint: false
+  invoke_dev_with: >-
+    No mapping library, no tile server, no lat/lng, and no distance computed from
+    mapPoint values — inline SVG over a stylised backdrop. Travel times stay seeded
+    edge data.
+
+- id: "12"
+  title: Presentation, accessibility and mobile polish
+  description: >-
+    Final pass across every surface for the premium property aesthetic, keyboard and
+    screen-reader accessibility, mobile layout, and rendered image credits.
+  spec_checkpoint: false
+  done_checkpoint: true
+  invoke_dev_with: >-
+    Image credits must actually render — that is a licensing requirement, not styling.
+    Walk the full success-signal demo path end to end and confirm it holds together:
+    location-free query, ranked destinations, property, breaks, seasonality, tenure.
