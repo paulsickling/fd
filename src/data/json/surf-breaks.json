@@ -1,0 +1,421 @@
+[
+  {
+    "id": "uluwatu",
+    "name": "Uluwatu",
+    "aliases": [],
+    "destinationId": "bali",
+    "type": "reef",
+    "direction": "left",
+    "skill": "advanced",
+    "skillCeiling": "expert",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 4, "max": 12 },
+      "windDirection": "SE",
+      "tide": "any"
+    },
+    "seasonality": [3, 3, 5, 8, 9, 10, 10, 10, 9, 8, 5, 3],
+    "bottom": "Coral reef",
+    "hazards": [
+      "Shallow coral reef",
+      "Strong currents on bigger swells",
+      "Cave entry and exit is tide-dependent"
+    ],
+    "crowdFactor": 5,
+    "paddleOutMinutes": 10,
+    "sections": [
+      {
+        "name": "The Peak",
+        "notes": "The most accessible take-off zone and the busiest part of the reef."
+      },
+      {
+        "name": "Racetrack",
+        "notes": "Fast down-the-line wall that runs once the swell has size behind it."
+      },
+      {
+        "name": "Temples",
+        "notes": "The furthest section down the reef, working on the larger, cleaner days."
+      },
+      {
+        "name": "Outside Corner",
+        "notes": "Only switches on when the swell is big; long, drawn-out walls."
+      },
+      {
+        "name": "The Bombie",
+        "notes": "The outermost peak, reserved for the largest swells of the dry season."
+      }
+    ],
+    "notes": "The anchor wave of the Bukit Peninsula. Five distinct sections activate at different tides and swell sizes, so the same reef reads as a different wave from one session to the next. At its best across the dry season on established SE trades, with June to August delivering the most powerful swell of the year.",
+    "mapPoint": { "x": 0.18, "y": 0.72 }
+  },
+  {
+    "id": "padang-padang",
+    "name": "Padang Padang",
+    "aliases": [],
+    "destinationId": "bali",
+    "type": "reef",
+    "direction": "left",
+    "skill": "expert",
+    "skillCeiling": "expert",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 5, "max": 12 },
+      "windDirection": "SE",
+      "tide": "high"
+    },
+    "seasonality": [1, 1, 2, 5, 7, 10, 10, 10, 7, 5, 2, 1],
+    "bottom": "Shallow coral reef",
+    "hazards": [
+      "Very shallow coral reef",
+      "Heavy, hollow take-off",
+      "The whole line-up concentrates on one peak"
+    ],
+    "crowdFactor": 5,
+    "paddleOutMinutes": 5,
+    "notes": "The most demanding wave on the Bukit and the shortest-tempered. It needs a bigger swell than the neighbouring breaks before it will start, and it wants the higher tides, so it sits dormant on days when Bingin and Balangan are perfect. When both conditions land together in June to August it is the best barrel on the peninsula.",
+    "mapPoint": { "x": 0.24, "y": 0.68 }
+  },
+  {
+    "id": "bingin",
+    "name": "Bingin",
+    "aliases": [],
+    "destinationId": "bali",
+    "type": "reef",
+    "direction": "left",
+    "skill": "intermediate",
+    "skillCeiling": "advanced",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 3, "max": 8 },
+      "windDirection": "SE",
+      "tide": "mid-to-high"
+    },
+    "seasonality": [3, 3, 5, 8, 9, 10, 10, 10, 9, 7, 5, 3],
+    "bottom": "Coral reef",
+    "hazards": [
+      "Shallow coral reef on the inside",
+      "Short, sharp barrel section",
+      "Busy peak through the middle of the dry season"
+    ],
+    "crowdFactor": 4,
+    "paddleOutMinutes": 5,
+    "notes": "A short, barrelling peak that is more forgiving on smaller swells than its neighbours, which is what makes it the Bukit break an intermediate can realistically surf. Best once the SE trades are established and the tide is right, through the middle of the dry season.",
+    "mapPoint": { "x": 0.29, "y": 0.66 }
+  },
+  {
+    "id": "impossibles",
+    "name": "Impossibles",
+    "aliases": [],
+    "destinationId": "bali",
+    "type": "reef",
+    "direction": "left",
+    "skill": "intermediate",
+    "skillCeiling": "advanced",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 3, "max": 10 },
+      "windDirection": "SE",
+      "tide": "mid-to-high"
+    },
+    "seasonality": [2, 2, 4, 7, 9, 10, 10, 10, 8, 7, 4, 2],
+    "bottom": "Coral reef",
+    "hazards": [
+      "Shallow coral reef",
+      "Long paddle back after a completed wave",
+      "Exposed stretch of reef with little shelter"
+    ],
+    "crowdFactor": 3,
+    "paddleOutMinutes": 10,
+    "notes": "One of the west-facing Bukit reefs that come into their own in the dry season, when the SE trades blow straight offshore. It sits on the same run of coast as Padang Padang and Bingin and shares their April to October window, strongest from June to August.",
+    "mapPoint": { "x": 0.34, "y": 0.63 }
+  },
+  {
+    "id": "balangan",
+    "name": "Balangan",
+    "aliases": [],
+    "destinationId": "bali",
+    "type": "reef",
+    "direction": "left",
+    "skill": "intermediate",
+    "skillCeiling": "advanced",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 3, "max": 9 },
+      "windDirection": "SE",
+      "tide": "mid-to-high"
+    },
+    "seasonality": [3, 3, 5, 8, 9, 10, 10, 10, 8, 7, 4, 3],
+    "bottom": "Coral reef",
+    "hazards": [
+      "Shallow coral reef",
+      "Reef shelf exposed on the lower tides",
+      "Current running down the reef on bigger swells"
+    ],
+    "crowdFactor": 3,
+    "paddleOutMinutes": 7,
+    "notes": "The northern end of the Bukit's west-facing run of left-hand reefs, at its best across the dry season on SE trade winds. Part of the same April to October pattern as Uluwatu, Padang Padang, Bingin and Impossibles, with the mid-year months carrying the most size.",
+    "mapPoint": { "x": 0.39, "y": 0.6 }
+  },
+  {
+    "id": "keramas",
+    "name": "Keramas",
+    "aliases": [],
+    "destinationId": "bali",
+    "type": "reef",
+    "direction": "right",
+    "skill": "advanced",
+    "skillCeiling": "expert",
+    "optimal": {
+      "swellDirection": "S",
+      "swellSizeFt": { "min": 3, "max": 10 },
+      "windDirection": "NW",
+      "tide": "mid"
+    },
+    "seasonality": [10, 10, 9, 6, 4, 3, 3, 3, 4, 6, 9, 10],
+    "bottom": "Shallow volcanic rock",
+    "hazards": [
+      "Shallow volcanic rock bottom",
+      "Powerful, square barrel section",
+      "Wet-season run-off affecting water quality"
+    ],
+    "crowdFactor": 4,
+    "paddleOutMinutes": 5,
+    "notes": "The reason Bali has no off season. When the wet season arrives and the wind switches to the NW, the Bukit shuts down and the east coast turns on. Keramas is the payoff: a right-hander over shallow volcanic rock that produces the most powerful barrels on the island, and it rewards advanced surfers only. Best at mid tide, November to March.",
+    "mapPoint": { "x": 0.78, "y": 0.34 }
+  },
+  {
+    "id": "chaweng",
+    "name": "Chaweng Beach",
+    "aliases": ["Chaweng"],
+    "destinationId": "ko-samui",
+    "type": "beach",
+    "direction": "left",
+    "skill": "beginner",
+    "skillCeiling": "intermediate",
+    "optimal": {
+      "swellDirection": "NE",
+      "swellSizeFt": { "min": 1, "max": 5 },
+      "windDirection": "NE",
+      "tide": "mid-to-high"
+    },
+    "seasonality": [9, 8, 5, 4, 2, 1, 1, 1, 1, 4, 10, 10],
+    "bottom": "Sand",
+    "hazards": [
+      "Long flat spells outside the NE monsoon window",
+      "Swimmers and beachfront boat traffic",
+      "Waves rarely exceed 1 to 1.5 metres, so board choice decides whether you surf or float"
+    ],
+    "crowdFactor": 3,
+    "paddleOutMinutes": 3,
+    "sections": [
+      {
+        "name": "Southern end",
+        "notes": "One of the two stretches of the bay that hold the best shape once the NE monsoon is running."
+      },
+      {
+        "name": "Central Chaweng",
+        "notes": "The other reliable stretch, and where the long left-hander sets up at mid to high tide."
+      }
+    ],
+    "notes": "Ko Samui's primary spot, and the clearest expression of why this island is on the list: it works when the Bukit does not. The NE monsoon blows offshore from November and cleans up the wind swell generated through the October to December wet season, producing a long left-hander at mid to high tide that is made for a longboard or a SUP. The southern and central ends of the bay are the parts worth walking to.",
+    "mapPoint": { "x": 0.68, "y": 0.42 }
+  },
+  {
+    "id": "lamai",
+    "name": "Lamai Beach",
+    "aliases": ["Lamai"],
+    "destinationId": "ko-samui",
+    "type": "beach",
+    "direction": "both",
+    "skill": "beginner",
+    "skillCeiling": "intermediate",
+    "optimal": {
+      "swellDirection": "NE",
+      "swellSizeFt": { "min": 1, "max": 4 },
+      "windDirection": "NE",
+      "tide": "mid"
+    },
+    "seasonality": [8, 8, 5, 3, 2, 1, 1, 1, 1, 3, 9, 9],
+    "bottom": "Sand",
+    "hazards": [
+      "Small and inconsistent for most of the year",
+      "Swimmers along a busy resort beach"
+    ],
+    "crowdFactor": 2,
+    "paddleOutMinutes": 3,
+    "notes": "The smaller, cleaner alternative to Chaweng, and the better call on the days when the surf is small, which on this coast is most of them. A genuine beginner's beach break on sand taking both lefts and rights, running on the same NE monsoon window of November to February.",
+    "mapPoint": { "x": 0.62, "y": 0.68 }
+  },
+  {
+    "id": "lances-right",
+    "name": "Lances Right",
+    "aliases": ["HT's", "Hollow Trees"],
+    "destinationId": "mentawais",
+    "type": "reef",
+    "direction": "right",
+    "skill": "advanced",
+    "skillCeiling": "expert",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 4, "max": 12 },
+      "windDirection": "SE",
+      "tide": "mid-to-high"
+    },
+    "seasonality": [3, 4, 7, 8, 9, 10, 10, 10, 9, 8, 7, 4],
+    "bottom": "Shallow, sharp coral reef",
+    "hazards": [
+      "Shallow, sharp reef; booties are standard",
+      "The barrel runs over the shallowest part of the reef",
+      "Remote: the nearest medical help is a boat ride away"
+    ],
+    "crowdFactor": 3,
+    "paddleOutMinutes": 3,
+    "sections": [
+      {
+        "name": "The Office",
+        "notes": "The fast section, where the wave runs away from you and asks for commitment."
+      },
+      {
+        "name": "The Main Peak",
+        "notes": "Walls over the shallow reef that earned the nickname the surgeon's table."
+      }
+    ],
+    "notes": "World-class barrels, and the wave the Mentawai charter fleet is built around. Prime through the dry season from March to November, when the winds are favourable and the swell arrives consistently large.",
+    "mapPoint": { "x": 0.44, "y": 0.44 }
+  },
+  {
+    "id": "macaronis",
+    "name": "Macaronis",
+    "aliases": [],
+    "destinationId": "mentawais",
+    "type": "reef",
+    "direction": "left",
+    "skill": "intermediate",
+    "skillCeiling": "advanced",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 3, "max": 10 },
+      "windDirection": "SE",
+      "tide": "mid-to-high"
+    },
+    "seasonality": [3, 4, 7, 8, 9, 10, 10, 9, 9, 8, 7, 4],
+    "bottom": "Shallow, sharp coral reef",
+    "hazards": [
+      "Shallow, sharp reef; booties are standard",
+      "The most crowded wave in the chain",
+      "Remote: the nearest medical help is a boat ride away"
+    ],
+    "crowdFactor": 4,
+    "paddleOutMinutes": 3,
+    "notes": "The most ripable wave in the chain and the one that makes the Mentawais legible to an intermediate. A mechanical left-hander that repeats the same shape set after set, workable on the smaller days. It is also the break here that reliably gets crowded.",
+    "mapPoint": { "x": 0.68, "y": 0.66 }
+  },
+  {
+    "id": "lances-left",
+    "name": "Lances Left",
+    "aliases": [],
+    "destinationId": "mentawais",
+    "type": "reef",
+    "direction": "left",
+    "skill": "intermediate",
+    "skillCeiling": "advanced",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 3, "max": 10 },
+      "windDirection": "SE",
+      "tide": "mid-to-high"
+    },
+    "seasonality": [3, 4, 7, 8, 9, 9, 10, 9, 9, 8, 7, 4],
+    "bottom": "Shallow, sharp coral reef",
+    "hazards": [
+      "Shallow, sharp reef; booties are standard",
+      "Hollow sections between the open walls",
+      "Remote: the nearest medical help is a boat ride away"
+    ],
+    "crowdFactor": 3,
+    "paddleOutMinutes": 3,
+    "notes": "Consistent, fun, rippable walls with hollow sections mixed through them. It sits across from Lances Right and gives the same anchorage a second option, which is why a charter can hold position here for days. Prime March to November.",
+    "mapPoint": { "x": 0.52, "y": 0.5 }
+  },
+  {
+    "id": "rifles",
+    "name": "Rifles",
+    "aliases": [],
+    "destinationId": "mentawais",
+    "type": "reef",
+    "direction": "right",
+    "skill": "expert",
+    "skillCeiling": "expert",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 4, "max": 12 },
+      "windDirection": "SE",
+      "tide": "mid"
+    },
+    "seasonality": [2, 3, 6, 8, 9, 10, 10, 10, 9, 7, 6, 3],
+    "bottom": "Shallow, sharp coral reef",
+    "hazards": [
+      "Shallow, sharp reef; booties are standard",
+      "Heavy, critical take-off with no margin",
+      "Remote: the nearest medical help is a boat ride away"
+    ],
+    "crowdFactor": 2,
+    "paddleOutMinutes": 3,
+    "notes": "Heavy, critical and fast. An expert-only right-hander that gives nothing back for a late take-off, and one of the reasons the chain has the reputation it does. Prime through the dry season, March to November.",
+    "mapPoint": { "x": 0.28, "y": 0.3 }
+  },
+  {
+    "id": "greenbush",
+    "name": "Greenbush",
+    "aliases": [],
+    "destinationId": "mentawais",
+    "type": "reef",
+    "direction": "left",
+    "skill": "expert",
+    "skillCeiling": "expert",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 4, "max": 12 },
+      "windDirection": "SE",
+      "tide": "mid"
+    },
+    "seasonality": [2, 3, 6, 8, 9, 10, 10, 10, 9, 7, 6, 3],
+    "bottom": "Shallow, sharp coral reef",
+    "hazards": [
+      "Shallow, sharp reef; booties are standard",
+      "Heavy barrel with a thick lip",
+      "Remote: the nearest medical help is a boat ride away"
+    ],
+    "crowdFactor": 2,
+    "paddleOutMinutes": 3,
+    "notes": "A heavy barrel and expert territory in every condition it breaks in. It is the wave people book the trip for and then watch from the boat. Prime March to November.",
+    "mapPoint": { "x": 0.82, "y": 0.82 }
+  },
+  {
+    "id": "bankvaults",
+    "name": "Bankvaults",
+    "aliases": [],
+    "destinationId": "mentawais",
+    "type": "reef",
+    "direction": "right",
+    "skill": "advanced",
+    "skillCeiling": "expert",
+    "optimal": {
+      "swellDirection": "SW",
+      "swellSizeFt": { "min": 4, "max": 10 },
+      "windDirection": "SE",
+      "tide": "mid"
+    },
+    "seasonality": [2, 3, 6, 7, 9, 10, 10, 9, 9, 7, 6, 3],
+    "bottom": "Shallow, sharp coral reef",
+    "hazards": [
+      "Shallow, sharp reef; booties are standard",
+      "Critical section over the shallowest reef",
+      "Remote: the nearest medical help is a boat ride away"
+    ],
+    "crowdFactor": 2,
+    "paddleOutMinutes": 3,
+    "notes": "A critical reef break, and a right-hander in a chain celebrated for its lefts. Advanced and above, prime through the dry season from March to November.",
+    "mapPoint": { "x": 0.16, "y": 0.2 }
+  }
+]

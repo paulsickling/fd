@@ -1,0 +1,236 @@
+[
+  {
+    "id": "bali",
+    "name": "Bali",
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "tagline": "Two coasts, two monsoons, no off season",
+    "summary": "Bali's surf is governed by the monsoon, and that single fact is what makes it worth owning here. From April to October the SE trades blow offshore across the Bukit Peninsula and its west-facing reefs, Uluwatu, Padang Padang, Bingin, Impossibles and Balangan, run at their best, with June to August delivering the most powerful swell of the year. When the wind swings NW from November the Bukit closes down and the east coast opens up, and Keramas produces the island's heaviest barrels. Buyer demand concentrates in the same two places year after year: the Bukit around Uluwatu, Bingin and Pecatu, and the Canggu to Pererenan corridor, where two- and three-bedroom villas are the largest slice of the market. Foreigners cannot hold Hak Milik freehold here at all, so how you would own it matters as much as what you would pay.",
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1671034456366-77aff6bd3316?w=1600&q=80",
+      "alt": "The Indian Ocean seen from the clifftops at Uluwatu on Bali's Bukit Peninsula",
+      "credit": "Bambang Irawan",
+      "creditUrl": "https://unsplash.com/@thebenks"
+    },
+    "access": "road",
+    "surfSeason": {
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulderMonths": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "note": "The dry season, April to October, is peak for the Bukit Peninsula's west-facing reefs, with June to August the most powerful swell of the year. The wet season is not flat: the wind switches NW and the east coast, Keramas above all, turns on from November to March."
+    },
+    "weatherSeason": {
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulderMonths": [
+        3,
+        11
+      ],
+      "note": "Dry season April to October, which is also when the Bukit is working. The NW monsoon brings the wet season from November to March."
+    },
+    "crowdSeason": {
+      "peakMonths": [
+        7,
+        8
+      ],
+      "shoulderMonths": [
+        6,
+        9,
+        12
+      ],
+      "note": "Busiest when the Bukit is at its best in the middle of the dry season. The wet season is the quiet window on the west coast, which is exactly when the east coast is working."
+    },
+    "skillRange": [
+      "intermediate",
+      "advanced",
+      "expert"
+    ],
+    "priceRange": {
+      "minUsd": 160000,
+      "maxUsd": 2000000
+    },
+    "tenureRegimeId": "ID",
+    "breakIds": [
+      "uluwatu",
+      "padang-padang",
+      "bingin",
+      "impossibles",
+      "balangan",
+      "keramas"
+    ],
+    "mapAspect": 1.4
+  },
+  {
+    "id": "ko-samui",
+    "name": "Ko Samui",
+    "country": "Thailand",
+    "countryCode": "TH",
+    "tagline": "The other half of the surfing year",
+    "summary": "Ko Samui's season is the exact inverse of Bali's, and that is the reason it is here. The NE monsoon runs from November to April and peaks from November to February, blowing offshore across the Gulf of Thailand and cleaning up the wind swell generated through the October to December wet season. The scale is modest, waves rarely exceed one to one and a half metres, so this is a beginner, intermediate and longboard island rather than a performance one, with Chaweng the primary spot and Lamai the smaller, cleaner alternative. Hold property in both Bali and Ko Samui and you surf all twelve months. The market runs from compact pool villas around five million baht to beachfront estates past two hundred million, with the core luxury segment sitting in three-bedroom private pool villas, and a sea view or beachfront position carrying a real 20 to 40 percent premium. Thailand is also the one country in this set where a foreigner can hold genuine freehold, inside a condominium's 49 percent quota.",
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1543489822-c49534f3271f?w=1600&q=80",
+      "alt": "An infinity pool above a bay of islands at Samujana, Ko Samui, Thailand",
+      "credit": "big.tiny.belly",
+      "creditUrl": "https://unsplash.com/@bigtinybelly"
+    },
+    "access": "flight",
+    "surfSeason": {
+      "peakMonths": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "shoulderMonths": [
+        3,
+        4,
+        10
+      ],
+      "note": "The NE monsoon drives the season from November to April, peaking November to February when NE winds blow offshore and produce clean waves. Waves rarely exceed one to one and a half metres, so this is longboard and SUP territory."
+    },
+    "weatherSeason": {
+      "peakMonths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "shoulderMonths": [
+        9
+      ],
+      "note": "Best weather from the turn of the year through the northern summer. October to December is the wet season, and it is that same weather that generates the island's wind swell."
+    },
+    "crowdSeason": {
+      "peakMonths": [
+        12,
+        1,
+        2
+      ],
+      "shoulderMonths": [
+        7,
+        8,
+        11
+      ],
+      "note": "The northern-hemisphere winter high season lands on top of the best surf window, so the waves and the resort beaches are busiest at the same time."
+    },
+    "skillRange": [
+      "beginner",
+      "intermediate"
+    ],
+    "priceRange": {
+      "minUsd": 150000,
+      "maxUsd": 5500000
+    },
+    "tenureRegimeId": "TH",
+    "breakIds": [
+      "chaweng",
+      "lamai"
+    ],
+    "mapAspect": 1.4
+  },
+  {
+    "id": "mentawais",
+    "name": "Mentawai Islands",
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "tagline": "Boat access only, and worth every hour of it",
+    "summary": "The Mentawais are the remote end of this portfolio: no road reaches them, and access is by boat charter or surf camp. The dry season from March to November is the prime window, with favourable winds and consistently large swell across a chain that holds Lances Right, Macaronis, Lances Left, Rifles, Greenbush and Bankvaults within a short run of each other. The reef is shallow and sharp throughout, so booties and a wetsuit top are standard kit rather than an afterthought, and most of the chain sits at advanced or expert level, with Macaronis the one wave that opens the islands to a strong intermediate. Property here is the private-island proposition in this set: scarce, remote and priced for the access rather than the postcode, and held under the same Indonesian tenure regime as Bali, where Hak Milik freehold is closed to foreigners.",
+    "heroImage": {
+      "src": "https://images.unsplash.com/photo-1504682066999-90437076f0dd?w=1600&q=80",
+      "alt": "A surfer deep inside a large tropical barrel",
+      "credit": "James Donaldson",
+      "creditUrl": "https://unsplash.com/@jim_dons"
+    },
+    "access": "boat-charter",
+    "surfSeason": {
+      "peakMonths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "shoulderMonths": [
+        12,
+        1,
+        2
+      ],
+      "note": "The dry season, March to November, is the prime window: favourable winds and consistently large swells across the whole chain."
+    },
+    "weatherSeason": {
+      "peakMonths": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulderMonths": [
+        3,
+        11
+      ],
+      "note": "The dry season March to November brings the favourable winds that make the chain work. December to February is the wet season."
+    },
+    "crowdSeason": {
+      "peakMonths": [
+        6,
+        7,
+        8
+      ],
+      "shoulderMonths": [
+        5,
+        9
+      ],
+      "note": "Charter berths are hardest to secure through the mid-year peak. Macaronis is the one break in the chain that reliably gets crowded; the rest stay quiet by virtue of the boat ride."
+    },
+    "skillRange": [
+      "intermediate",
+      "advanced",
+      "expert"
+    ],
+    "priceRange": {
+      "minUsd": 110000,
+      "maxUsd": 1200000
+    },
+    "tenureRegimeId": "ID",
+    "breakIds": [
+      "lances-right",
+      "macaronis",
+      "lances-left",
+      "rifles",
+      "greenbush",
+      "bankvaults"
+    ],
+    "mapAspect": 1.4
+  }
+]

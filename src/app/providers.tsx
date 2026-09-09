@@ -1,12 +1,22 @@
 import { type ReactNode, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { RepositoryProvider } from '@/data/RepositoryProvider';
+import type { DataRepository } from '@/data/DataRepository';
 
 /**
- * The composition root. Story 2 adds the DataRepository selection here — that single
- * choice is what makes SPEC.md CAP-7 a one-line swap between the JSON adapter and a
- * remote one. Keep it the only place an implementation is named.
+ * The application's provider stack.
+ *
+ * The data source itself is chosen inside RepositoryProvider (src/data/repositoryContext),
+ * which is the single composition point behind SPEC.md CAP-7. `repository` is exposed here
+ * only so tests can mount the tree against any adapter.
  */
-export function AppProviders({ children }: { children: ReactNode }) {
+export function AppProviders({
+  children,
+  repository,
+}: {
+  children: ReactNode;
+  repository?: DataRepository;
+}) {
   const [queryClient] = useState(
     () =>
       new QueryClient({
@@ -20,5 +30,9 @@ export function AppProviders({ children }: { children: ReactNode }) {
       }),
   );
 
-  return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RepositoryProvider {...(repository ? { repository } : {})}>{children}</RepositoryProvider>
+    </QueryClientProvider>
+  );
 }

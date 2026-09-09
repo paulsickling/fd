@@ -1,0 +1,1475 @@
+[
+  {
+    "id": "bali-uluwatu-clifftop-pavilion",
+    "title": "Clifftop Pavilion, Uluwatu",
+    "destinationId": "bali",
+    "locality": "Uluwatu",
+    "type": "villa",
+    "priceUsd": 2000000,
+    "priceLocal": {
+      "amount": 32400000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "landSqm": 500,
+    "builtSqm": 420,
+    "tenure": "pt-pma",
+    "features": [
+      "Cantilevered 20m infinity pool",
+      "Open-sided living pavilion",
+      "Coral stone and ironwood construction",
+      "Board room with rinse station",
+      "Staff quarters",
+      "Standby generator and water treatment"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1604842937136-1648761a6256?w=1600&q=80",
+        "alt": "Timber-roofed pavilion set on the limestone cliff above an open ocean channel",
+        "credit": "Polina Kuzovkova",
+        "creditUrl": "https://unsplash.com/@p_kuzovkova"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?w=1600&q=80",
+        "alt": "White stone villa with a lap pool running out toward the cliff edge",
+        "credit": "John Fornander",
+        "creditUrl": "https://unsplash.com/@johnfo"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1766603636584-38baba9fcfd4?w=1600&q=80",
+        "alt": "Upper-level terrace with lounge seating and a plunge tub facing the sea",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1546839960-8eac681ffe3b?w=1600&q=80",
+        "alt": "Bukit peninsula cliffs and shoreline photographed at golden hour",
+        "credit": "Luiz Guimaraes",
+        "creditUrl": "https://unsplash.com/@tatavo"
+      }
+    ],
+    "description": "Four bedrooms arranged around an open pavilion on the limestone shelf above the Uluwatu channel, with the swell lines legible from every level. Coral stone, ironwood joinery and a twenty-metre pool cantilevered toward the horizon. Held through a PT PMA with survey and building consents already issued.",
+    "nearbyBreaks": [
+      {
+        "breakId": "uluwatu",
+        "travelMinutes": 6,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "padang-padang",
+        "travelMinutes": 9,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "impossibles",
+        "travelMinutes": 12,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.14,
+      "y": 0.62
+    }
+  },
+  {
+    "id": "bali-bingin-cliff-house",
+    "title": "Cliff House, Bingin",
+    "destinationId": "bali",
+    "locality": "Bingin",
+    "type": "villa",
+    "priceUsd": 1650000,
+    "priceLocal": {
+      "amount": 26730000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "landSqm": 233,
+    "builtSqm": 285,
+    "tenure": "pt-pma",
+    "features": [
+      "Four-minute walk to the Bingin steps",
+      "West-facing sunset terrace",
+      "Plunge pool and outdoor shower",
+      "Board storage and repair bench",
+      "Full solar array with battery backup"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1700512825803-b2569dc8e094?w=1600&q=80",
+        "alt": "Rocky cliff dropping to a reef pass with the ocean in the foreground",
+        "credit": "Lisa van Vliet",
+        "creditUrl": "https://unsplash.com/@lisaaxv"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1543489822-c49534f3271f?w=1600&q=80",
+        "alt": "Infinity pool on a cliff terrace looking out over a blue bay",
+        "credit": "big.tiny.belly",
+        "creditUrl": "https://unsplash.com/@bigtinybelly"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760067537116-de1f76fe8f95?w=1600&q=80",
+        "alt": "Main bedroom with full-height windows opening onto dense green canopy",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      }
+    ],
+    "description": "A three-bedroom house cut into the cliff directly above the Bingin reef, four minutes on foot from the sand track down to the peak. Living space opens onto a west-facing terrace that takes the full afternoon trade wind. Held through a PT PMA, the closest structure a foreign buyer has to freehold in Indonesia.",
+    "nearbyBreaks": [
+      {
+        "breakId": "bingin",
+        "travelMinutes": 4,
+        "travelMode": "walk"
+      },
+      {
+        "breakId": "impossibles",
+        "travelMinutes": 9,
+        "travelMode": "walk"
+      },
+      {
+        "breakId": "padang-padang",
+        "travelMinutes": 7,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.24,
+      "y": 0.55
+    }
+  },
+  {
+    "id": "bali-bingin-garden-villa",
+    "title": "Garden Villa, Bingin",
+    "destinationId": "bali",
+    "locality": "Bingin",
+    "type": "villa",
+    "priceUsd": 1200000,
+    "priceLocal": {
+      "amount": 19440000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "landSqm": 220,
+    "builtSqm": 270,
+    "tenure": "hak-pakai",
+    "features": [
+      "Eight-minute walk to Bingin beach",
+      "Walled tropical garden",
+      "12m pool",
+      "Open kitchen and dining pavilion",
+      "Two-car carport"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1582610116397-edb318620f90?w=1600&q=80",
+        "alt": "Low white villa opening onto a swimming pool and planted garden",
+        "credit": "Dinuka Lankaloka",
+        "creditUrl": "https://unsplash.com/@bawva"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1720161263981-84281892ee4b?w=1600&q=80",
+        "alt": "Pool terrace with a single lounge chair under afternoon shade",
+        "credit": "Pepita Martasya",
+        "creditUrl": "https://unsplash.com/@pepitamartasya"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760067537740-faa11f7bdf1e?w=1600&q=80",
+        "alt": "Bedroom with wide glazing framing the garden planting outside",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      }
+    ],
+    "description": "Set one lane back from the cliff line, this three-bedroom villa trades the view for a walled garden and a genuinely quiet plot. The walk down to Bingin beach is eight minutes, on the same path the cliff houses use. Registered under Hak Pakai in the buyer's own name.",
+    "nearbyBreaks": [
+      {
+        "breakId": "bingin",
+        "travelMinutes": 8,
+        "travelMode": "walk"
+      },
+      {
+        "breakId": "impossibles",
+        "travelMinutes": 7,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.31,
+      "y": 0.67
+    }
+  },
+  {
+    "id": "bali-pecatu-ridge-estate",
+    "title": "Ridge Estate, Pecatu",
+    "destinationId": "bali",
+    "locality": "Pecatu",
+    "type": "estate",
+    "priceUsd": 1600000,
+    "priceLocal": {
+      "amount": 25920000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "landSqm": 1200,
+    "builtSqm": 680,
+    "tenure": "pt-pma",
+    "features": [
+      "Five-pavilion layout",
+      "25m lap pool",
+      "Gym and treatment room",
+      "Two-bedroom guest house",
+      "Mature frangipani garden",
+      "Standby generator and water treatment"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1607567618395-62fc2d132c3e?w=1600&q=80",
+        "alt": "Long single-storey pavilion facing a rectangular pool at dusk",
+        "credit": "Akkash Shah",
+        "creditUrl": "https://unsplash.com/@im_sky"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1634671651144-adbeca8623cb?w=1600&q=80",
+        "alt": "Aerial view of a pool enclosed by mature palms and lawn",
+        "credit": "We Do Creative Films",
+        "creditUrl": "https://unsplash.com/@wedocreativefilms"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1618582383736-ed9080511254?w=1600&q=80",
+        "alt": "Interior detail of a heavy timber door beside a solid wooden table",
+        "credit": "Peter Herrmann",
+        "creditUrl": "https://unsplash.com/@tama66"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1787422170657-ac3d712ab756?w=1600&q=80",
+        "alt": "Traditional tiled roofline rising out of palms and tropical planting",
+        "credit": "Rowan Heuvel",
+        "creditUrl": "https://unsplash.com/@insolitus"
+      }
+    ],
+    "description": "A five-pavilion estate on the Pecatu ridge, laid out around a twenty-five metre lap pool and a mature garden rather than a view. The scale here buys land and separation: 1,200 square metres, a detached guest house, and enough distance from the road to hear nothing. Structured through a PT PMA.",
+    "nearbyBreaks": [
+      {
+        "breakId": "padang-padang",
+        "travelMinutes": 8,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "impossibles",
+        "travelMinutes": 9,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "uluwatu",
+        "travelMinutes": 11,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.38,
+      "y": 0.44
+    }
+  },
+  {
+    "id": "bali-balangan-beach-house",
+    "title": "Beach House, Balangan",
+    "destinationId": "bali",
+    "locality": "Balangan",
+    "type": "villa",
+    "priceUsd": 750000,
+    "priceLocal": {
+      "amount": 12150000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "landSqm": 300,
+    "builtSqm": 180,
+    "tenure": "hak-sewa",
+    "tenureYears": 30,
+    "features": [
+      "Six-minute path to Balangan sand",
+      "Sea-facing timber deck",
+      "Outdoor bathroom",
+      "Solar hot water",
+      "Rinse tank and board racks"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?w=1600&q=80",
+        "alt": "Timber and white render beach house alongside a small pool",
+        "credit": "The Anam",
+        "creditUrl": "https://unsplash.com/@theanamcxr"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1601468846763-3d29335ccaa5?w=1600&q=80",
+        "alt": "Seabird crossing open water off a limestone headland",
+        "credit": "Elihu Gideon",
+        "creditUrl": "https://unsplash.com/@elihugideon"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1615722440048-da4ccf6de048?w=1600&q=80",
+        "alt": "Timber loungers set on a pool deck in late afternoon light",
+        "credit": "Huy Phan",
+        "creditUrl": "https://unsplash.com/@huyphan2602"
+      }
+    ],
+    "description": "Two bedrooms on the low headland at Balangan, six minutes down the path to the sand. The deck faces the bay squarely, so the day's decision is made before coffee. Thirty-year Hak Sewa lease with a documented extension option.",
+    "nearbyBreaks": [
+      {
+        "breakId": "balangan",
+        "travelMinutes": 6,
+        "travelMode": "walk"
+      },
+      {
+        "breakId": "impossibles",
+        "travelMinutes": 8,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "bingin",
+        "travelMinutes": 12,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.2,
+      "y": 0.34
+    }
+  },
+  {
+    "id": "bali-canggu-lane-villa",
+    "title": "Lane Villa, Canggu",
+    "destinationId": "bali",
+    "locality": "Canggu",
+    "type": "villa",
+    "priceUsd": 200000,
+    "priceLocal": {
+      "amount": 3240000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "landSqm": 200,
+    "builtSqm": 185,
+    "tenure": "hak-sewa",
+    "tenureYears": 25,
+    "features": [
+      "Rice-field outlook",
+      "8m pool",
+      "Roof terrace",
+      "Air conditioning throughout",
+      "Walled parking for a car and two scooters"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1594479125841-ff7800c6afcc?w=1600&q=80",
+        "alt": "Compact two-storey villa with a narrow pool along its garden edge",
+        "credit": "Lily Tran",
+        "creditUrl": "https://unsplash.com/@lilytran2395"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1746964246729-3bcad599e959?w=1600&q=80",
+        "alt": "Working rice fields running back toward a distant volcanic ridge",
+        "credit": "Maximus Beaumont",
+        "creditUrl": "https://unsplash.com/@mllewelynb"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1615529162924-f8605388461d?w=1600&q=80",
+        "alt": "Simply dressed bedroom with white linen on a timber frame",
+        "credit": "Spacejoy",
+        "creditUrl": "https://unsplash.com/@spacejoy"
+      }
+    ],
+    "description": "A three-bedroom villa on a field lane between Canggu and Berawa, sized for use rather than display. The roof terrace looks over rice rather than road, which is the difference that matters on this side of the island. Twenty-five-year Hak Sewa lease, notarised and registered.",
+    "nearbyBreaks": [
+      {
+        "breakId": "uluwatu",
+        "travelMinutes": 80,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.62,
+      "y": 0.18
+    }
+  },
+  {
+    "id": "bali-pererenan-field-house",
+    "title": "Field House, Pererenan",
+    "destinationId": "bali",
+    "locality": "Pererenan",
+    "type": "villa",
+    "priceUsd": 160000,
+    "priceLocal": {
+      "amount": 2592000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "landSqm": 150,
+    "builtSqm": 128,
+    "tenure": "hak-sewa",
+    "tenureYears": 25,
+    "features": [
+      "Single-storey two-bedroom plan",
+      "6m plunge pool",
+      "Open-air kitchen",
+      "Ceiling fans and cross ventilation",
+      "Twenty-five-year registered lease"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1670589953903-b4e2f17a70a9?w=1600&q=80",
+        "alt": "Small plunge pool set against the rear elevation of a modest house",
+        "credit": "Salman Saqib",
+        "creditUrl": "https://unsplash.com/@salmansaqib"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760043209053-e4aa05f5dec1?w=1600&q=80",
+        "alt": "Palms standing over terraced fields in flat morning light",
+        "credit": "Matt Johnson",
+        "creditUrl": "https://unsplash.com/@mrjoh3"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1750271334785-4f6008035021?w=1600&q=80",
+        "alt": "Bright uncluttered bedroom with a low bed and pale walls",
+        "credit": "sidath vimukthi",
+        "creditUrl": "https://unsplash.com/@sidathkc"
+      }
+    ],
+    "description": "The entry point to this market: a two-bedroom single-storey house on 150 square metres at the quiet end of Pererenan. Everything is open-air except the bedrooms, which is how these houses are meant to work. Twenty-five-year Hak Sewa lease.",
+    "nearbyBreaks": [
+      {
+        "breakId": "uluwatu",
+        "travelMinutes": 85,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.72,
+      "y": 0.11
+    }
+  },
+  {
+    "id": "bali-keramas-black-sand-house",
+    "title": "Black Sand House, Keramas",
+    "destinationId": "bali",
+    "locality": "Keramas",
+    "type": "villa",
+    "priceUsd": 620000,
+    "priceLocal": {
+      "amount": 10044000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "landSqm": 400,
+    "builtSqm": 240,
+    "tenure": "hak-pakai",
+    "features": [
+      "Five-minute walk to the Keramas peak",
+      "Black-sand beach frontage",
+      "15m pool facing the break",
+      "Covered outdoor lounge",
+      "Hak Pakai title registered to the buyer"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1606917454663-343e58811bb1?w=1600&q=80",
+        "alt": "White and timber villa standing directly behind a dark sand shoreline",
+        "credit": "Szabolcs Varnai",
+        "creditUrl": "https://unsplash.com/@szabolcs"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1587434142939-335f5b445907?w=1600&q=80",
+        "alt": "Aerial view of ocean swell lines stacking toward the shore",
+        "credit": "Manny Moreno",
+        "creditUrl": "https://unsplash.com/@mannydream"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760067538068-03d10481bacb?w=1600&q=80",
+        "alt": "Bedroom with an open doorway through to the bathroom beyond",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      }
+    ],
+    "description": "On the east coast, where the season runs opposite to the Bukit: this house faces the Keramas right-hander across five minutes of black sand. Three bedrooms, a fifteen-metre pool on the beach boundary, and the wet-season swell arriving in front of it from November. Hak Pakai title registered in the buyer's name.",
+    "nearbyBreaks": [
+      {
+        "breakId": "keramas",
+        "travelMinutes": 5,
+        "travelMode": "walk"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.88,
+      "y": 0.72
+    }
+  },
+  {
+    "id": "samui-chaweng-hill-villa",
+    "title": "Hill Villa, Chaweng",
+    "destinationId": "ko-samui",
+    "locality": "Chaweng",
+    "type": "villa",
+    "priceUsd": 1000000,
+    "priceLocal": {
+      "amount": 36000000,
+      "currency": "THB"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "landSqm": 900,
+    "builtSqm": 340,
+    "tenure": "th-leasehold-30",
+    "tenureYears": 30,
+    "features": [
+      "Elevated outlook over Chaweng bay",
+      "Infinity-edge pool",
+      "Open-plan sala and kitchen",
+      "Covered carport",
+      "Building owned outright over a registered land lease"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1777919541982-dcb34c146a2d?w=1600&q=80",
+        "alt": "Infinity pool on a hillside terrace above white houses and palms",
+        "credit": "Ben Koorengevel",
+        "creditUrl": "https://unsplash.com/@benkoorengevel"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1572529593091-6c05c37cacc7?w=1600&q=80",
+        "alt": "Green tree line meeting the beach along a wide Gulf of Thailand bay",
+        "credit": "Yavor Punchev",
+        "creditUrl": "https://unsplash.com/@yavor"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760067537567-f3e1f8ad7ef7?w=1600&q=80",
+        "alt": "Open-sided living room with low sofas around a timber coffee table",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      }
+    ],
+    "description": "Three bedrooms on the slope above Chaweng, angled so the pool edge and the bay line up from the living room. Nine hundred square metres of land gives it privacy the beach road cannot. The land sits on a registered thirty-year lease while the house itself is owned outright.",
+    "nearbyBreaks": [
+      {
+        "breakId": "chaweng",
+        "travelMinutes": 7,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "lamai",
+        "travelMinutes": 20,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.68,
+      "y": 0.44
+    }
+  },
+  {
+    "id": "samui-chaweng-garden-villa",
+    "title": "Garden Villa, Chaweng",
+    "destinationId": "ko-samui",
+    "locality": "Chaweng",
+    "type": "villa",
+    "priceUsd": 725000,
+    "priceLocal": {
+      "amount": 26100000,
+      "currency": "THB"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "landSqm": 800,
+    "builtSqm": 320,
+    "tenure": "th-company",
+    "features": [
+      "Enclosed tropical garden",
+      "14m pool",
+      "Separate guest pavilion",
+      "Fitted kitchen and utility room",
+      "Held through a Thai limited company"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1599777560450-e462cffc5368?w=1600&q=80",
+        "alt": "Brown concrete villa set back behind planting near still water",
+        "credit": "Grgur Vuckov",
+        "creditUrl": "https://unsplash.com/@grug_257"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1669123547614-5c0a12d6f4b4?w=1600&q=80",
+        "alt": "Pool with a shaded gazebo and chairs at the garden end",
+        "credit": "Keegan Checks",
+        "creditUrl": "https://unsplash.com/@keeganjchecks"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1613914153139-79eafdf15d23?w=1600&q=80",
+        "alt": "Dining table and matching chairs on pale parquet flooring",
+        "credit": "Fabian Kuhne",
+        "creditUrl": "https://unsplash.com/@fabiankuehne"
+      }
+    ],
+    "description": "The inland comparison to the hillside houses above Chaweng: the same three bedrooms and a larger pool, without the bay in view. Eight hundred square metres of walled garden, a guest pavilion, and a short run down to the beach road. Ownership sits with a Thai limited company.",
+    "nearbyBreaks": [
+      {
+        "breakId": "chaweng",
+        "travelMinutes": 9,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.75,
+      "y": 0.53
+    }
+  },
+  {
+    "id": "samui-chaweng-beach-residence",
+    "title": "Beach Residence, Chaweng",
+    "destinationId": "ko-samui",
+    "locality": "Chaweng",
+    "type": "condo",
+    "priceUsd": 350000,
+    "priceLocal": {
+      "amount": 12600000,
+      "currency": "THB"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "landSqm": 0,
+    "builtSqm": 118,
+    "tenure": "th-condo-foreign-quota",
+    "features": [
+      "Eight-minute walk to the Chaweng break",
+      "Sea-facing balcony",
+      "Shared 30m pool and gym",
+      "Secure parking and lift access",
+      "Chanote title within the 49% foreign quota"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1708111419289-c7451a1c1128?w=1600&q=80",
+        "alt": "Loungers and umbrellas along the sand at the southern end of the bay",
+        "credit": "Viv T",
+        "creditUrl": "https://unsplash.com/@vivt"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1776500587879-5f8acadf4a69?w=1600&q=80",
+        "alt": "Second bedroom with twin beds and windows onto the garden level",
+        "credit": "Tran Vinh",
+        "creditUrl": "https://unsplash.com/@vinhtran21"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1729808641871-8d8b5ade6bbe?w=1600&q=80",
+        "alt": "Aerial view of a low-rise residential block around a shared pool",
+        "credit": "Antonio Araujo",
+        "creditUrl": "https://unsplash.com/@antonioaaaraujo"
+      }
+    ],
+    "description": "A two-bedroom apartment on the sea side of the Chaweng strip, eight minutes on foot from the sandbar that works through the north-east monsoon. The balcony faces the bay and the building carries a proper pool and gym. Bought freehold inside the building's 49 per cent foreign quota, with a chanote issued in the buyer's own name.",
+    "nearbyBreaks": [
+      {
+        "breakId": "chaweng",
+        "travelMinutes": 8,
+        "travelMode": "walk"
+      },
+      {
+        "breakId": "lamai",
+        "travelMinutes": 22,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.62,
+      "y": 0.35
+    }
+  },
+  {
+    "id": "samui-lamai-beachfront-villa",
+    "title": "Beachfront Villa, Lamai",
+    "destinationId": "ko-samui",
+    "locality": "Lamai",
+    "type": "villa",
+    "priceUsd": 2500000,
+    "priceLocal": {
+      "amount": 90000000,
+      "currency": "THB"
+    },
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "landSqm": 1600,
+    "builtSqm": 520,
+    "tenure": "th-leasehold-30",
+    "tenureYears": 30,
+    "features": [
+      "Direct sand frontage at Lamai",
+      "Three-minute walk to the break",
+      "25m beachfront pool",
+      "Beach sala and outdoor kitchen",
+      "Staff accommodation"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1729720281656-0ee786260bde?w=1600&q=80",
+        "alt": "Overhead view of a private house sitting directly on a sand beach",
+        "credit": "Antonio Araujo",
+        "creditUrl": "https://unsplash.com/@antonioaaaraujo"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1781920904698-c3b11733f9cf?w=1600&q=80",
+        "alt": "Beachfront pavilions and pool photographed at sunset",
+        "credit": "Vanara Resort",
+        "creditUrl": "https://unsplash.com/@vanararesort"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760067537391-cd60b1ebc597?w=1600&q=80",
+        "alt": "Principal bedroom with framed seascapes above the headboard",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      }
+    ],
+    "description": "Forty metres of sand frontage at the quiet northern end of Lamai, with a twenty-five metre pool running parallel to the beach. Four ensuite bedrooms, a beach sala, and staff accommodation set behind the main house. Thirty-year registered land lease with the building owned outright.",
+    "nearbyBreaks": [
+      {
+        "breakId": "lamai",
+        "travelMinutes": 3,
+        "travelMode": "walk"
+      },
+      {
+        "breakId": "chaweng",
+        "travelMinutes": 18,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.72,
+      "y": 0.78
+    }
+  },
+  {
+    "id": "samui-lamai-pool-villa",
+    "title": "Pool Villa, Lamai",
+    "destinationId": "ko-samui",
+    "locality": "Lamai",
+    "type": "villa",
+    "priceUsd": 150000,
+    "priceLocal": {
+      "amount": 5400000,
+      "currency": "THB"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "landSqm": 400,
+    "builtSqm": 140,
+    "tenure": "th-leasehold-30",
+    "tenureYears": 30,
+    "features": [
+      "Compact two-bedroom plan",
+      "8m private pool",
+      "Covered terrace",
+      "Fitted European kitchen",
+      "Registered thirty-year lease"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1692736933760-8a8a9b8c1b6f?w=1600&q=80",
+        "alt": "Small private pool with a table and two chairs on the terrace",
+        "credit": "Shawn",
+        "creditUrl": "https://unsplash.com/@shawnanggg"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1560188512-a4e5ed397709?w=1600&q=80",
+        "alt": "Palm fronds falling across the white wall of a low building",
+        "credit": "Jure Tufekcic",
+        "creditUrl": "https://unsplash.com/@tufo"
+      }
+    ],
+    "description": "The island's entry product, done properly: two bedrooms, a private eight-metre pool, and four hundred square metres of level land inland from Lamai. Nothing here is decorative, which is why the price holds. Registered thirty-year lease.",
+    "nearbyBreaks": [
+      {
+        "breakId": "lamai",
+        "travelMinutes": 6,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.81,
+      "y": 0.69
+    }
+  },
+  {
+    "id": "samui-plai-laem-headland-villa",
+    "title": "Headland Villa, Plai Laem",
+    "destinationId": "ko-samui",
+    "locality": "Plai Laem",
+    "type": "villa",
+    "priceUsd": 1750000,
+    "priceLocal": {
+      "amount": 63000000,
+      "currency": "THB"
+    },
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "landSqm": 1100,
+    "builtSqm": 460,
+    "tenure": "th-company",
+    "features": [
+      "North-east headland outlook",
+      "20m infinity pool",
+      "Four ensuite bedrooms",
+      "Guest sala and outdoor dining",
+      "Held through a Thai limited company"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1691849233457-837d8e2f9da3?w=1600&q=80",
+        "alt": "Elevated view over a headland property and the water beyond it",
+        "credit": "Wojtek Witkowski",
+        "creditUrl": "https://unsplash.com/@wojtek"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1777919541977-16d7271ac96e?w=1600&q=80",
+        "alt": "Infinity pool edge dissolving into a tropical bay",
+        "credit": "Ben Koorengevel",
+        "creditUrl": "https://unsplash.com/@benkoorengevel"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1774280954999-9758f11f3d41?w=1600&q=80",
+        "alt": "Bedroom opening through a wide window to green hillside",
+        "credit": "Marc Wieland",
+        "creditUrl": "https://unsplash.com/@mawiswiss"
+      }
+    ],
+    "description": "Four ensuite bedrooms on the Plai Laem headland, with the pool set on the seaward boundary and nothing built above it. The north-east aspect catches the monsoon breeze that makes this corner of the island liveable in December. Ownership through a Thai limited company.",
+    "nearbyBreaks": [
+      {
+        "breakId": "chaweng",
+        "travelMinutes": 12,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "lamai",
+        "travelMinutes": 26,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.55,
+      "y": 0.15
+    }
+  },
+  {
+    "id": "samui-plai-laem-quota-residence",
+    "title": "Quota Residence, Plai Laem",
+    "destinationId": "ko-samui",
+    "locality": "Plai Laem",
+    "type": "condo",
+    "priceUsd": 190000,
+    "priceLocal": {
+      "amount": 6840000,
+      "currency": "THB"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "landSqm": 0,
+    "builtSqm": 62,
+    "tenure": "th-condo-foreign-quota",
+    "features": [
+      "Garden-facing one-bedroom",
+      "Shared lap pool and gardens",
+      "Managed building with on-site staff",
+      "Chanote title in the buyer's name",
+      "Freehold within the 49% foreign quota"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=1600&q=80",
+        "alt": "Bedroom corner with a pale dresser and round wall mirror",
+        "credit": "Minh Pham",
+        "creditUrl": "https://unsplash.com/@minhphamdesign"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1603894303393-4c6048325f6b?w=1600&q=80",
+        "alt": "Potted plants arranged against a white rendered courtyard wall",
+        "credit": "reisetopia",
+        "creditUrl": "https://unsplash.com/@reisetopia"
+      }
+    ],
+    "description": "Sixty-two square metres on the garden side of a managed building near Plai Laem, priced for a first foothold rather than a statement. The interest here is legal rather than architectural: a condominium is the only asset in Thailand a foreigner can hold freehold. Chanote title issued within the building's 49 per cent quota.",
+    "nearbyBreaks": [
+      {
+        "breakId": "chaweng",
+        "travelMinutes": 14,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.47,
+      "y": 0.22
+    }
+  },
+  {
+    "id": "samui-bang-por-beach-estate",
+    "title": "Beach Estate, Bang Por",
+    "destinationId": "ko-samui",
+    "locality": "Bang Por",
+    "type": "estate",
+    "priceUsd": 5500000,
+    "priceLocal": {
+      "amount": 198000000,
+      "currency": "THB"
+    },
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "landSqm": 2400,
+    "builtSqm": 900,
+    "tenure": "th-company",
+    "features": [
+      "Eighty metres of Bang Por beach frontage",
+      "Two pools and a beachfront sala",
+      "Cinema and wine room",
+      "Two-bedroom guest villa",
+      "Staff quarters and standby generator"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1729720281814-5ddf34c69f8b?w=1600&q=80",
+        "alt": "Aerial view of a large beachfront compound with a pool terrace",
+        "credit": "Antonio Araujo",
+        "creditUrl": "https://unsplash.com/@antonioaaaraujo"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1586968425481-3285b99f3b44?w=1600&q=80",
+        "alt": "Low houses standing at the water's edge on a calm afternoon",
+        "credit": "Miltiadis Fragkidis",
+        "creditUrl": "https://unsplash.com/@_miltiadis_"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1768063121738-d16fc2b7e4d4?w=1600&q=80",
+        "alt": "Open timber pavilion positioned on the sand facing the sea",
+        "credit": "Nopparuj Lamaikul",
+        "creditUrl": "https://unsplash.com/@center999"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760067538559-49b2bfb5f42a?w=1600&q=80",
+        "alt": "Covered outdoor living area with seating and hanging chairs",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      }
+    ],
+    "description": "The top of this market: eighty metres of Bang Por frontage on the calm north-west coast, with two pools, a beach sala and a separate guest villa on 2,400 square metres. Sunsets here run straight down the channel toward the mainland. Held through a Thai limited company.",
+    "nearbyBreaks": [
+      {
+        "breakId": "chaweng",
+        "travelMinutes": 32,
+        "travelMode": "drive"
+      },
+      {
+        "breakId": "lamai",
+        "travelMinutes": 45,
+        "travelMode": "drive"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.17,
+      "y": 0.26
+    }
+  },
+  {
+    "id": "mentawai-katiet-reef-house",
+    "title": "Reef House, Sipura",
+    "destinationId": "mentawais",
+    "locality": "Sipura",
+    "type": "villa",
+    "priceUsd": 900000,
+    "priceLocal": {
+      "amount": 14580000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "landSqm": 2000,
+    "builtSqm": 380,
+    "tenure": "pt-pma",
+    "features": [
+      "Four-minute walk to the Lance's Right lineup",
+      "Boat mooring and tender included",
+      "Desalination plant and solar array",
+      "Board room for twelve",
+      "Satellite connectivity"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?w=1600&q=80",
+        "alt": "Timber house standing behind a palm treeline on a reef island",
+        "credit": "Cauayan Island Resort",
+        "creditUrl": "https://unsplash.com/@cauayanislandresort"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1678599929640-fd4636fde974?w=1600&q=80",
+        "alt": "Aerial view of clear water breaking over a shallow coral reef",
+        "credit": "Iain",
+        "creditUrl": "https://unsplash.com/@photoken123"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1618478872836-f8efa847e8ab?w=1600&q=80",
+        "alt": "Coconut palms standing over cleared grass near the shoreline",
+        "credit": "Delphine Fant",
+        "creditUrl": "https://unsplash.com/@delo_gypsea"
+      }
+    ],
+    "description": "A four-bedroom house behind the treeline at Katiet, four minutes across the sand from the Lance's Right lineup. Everything the island cannot supply is on site: desalination, solar with battery storage, a tender on its own mooring and a satellite link. Structured through a PT PMA.",
+    "nearbyBreaks": [
+      {
+        "breakId": "lances-right",
+        "travelMinutes": 4,
+        "travelMode": "walk"
+      },
+      {
+        "breakId": "lances-left",
+        "travelMinutes": 15,
+        "travelMode": "boat"
+      },
+      {
+        "breakId": "bankvaults",
+        "travelMinutes": 45,
+        "travelMode": "boat"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.3,
+      "y": 0.28
+    }
+  },
+  {
+    "id": "mentawai-sipura-jungle-villa",
+    "title": "Jungle Villa, Sipura",
+    "destinationId": "mentawais",
+    "locality": "Sipura",
+    "type": "villa",
+    "priceUsd": 690000,
+    "priceLocal": {
+      "amount": 11178000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "landSqm": 2200,
+    "builtSqm": 380,
+    "tenure": "hak-pakai",
+    "features": [
+      "Set back in mature jungle",
+      "Covered central pavilion",
+      "Solar array with battery storage",
+      "Rainwater capture and filtration",
+      "Shared jetty access"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1784488651693-b06c11aa4cee?w=1600&q=80",
+        "alt": "Waterfalls running down a steep jungle hillside in heavy green light",
+        "credit": "Rowan Heuvel",
+        "creditUrl": "https://unsplash.com/@insolitus"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1670152541482-9a3790ac78c5?w=1600&q=80",
+        "alt": "House with a broad pitched roof sheltering an open ground floor",
+        "credit": "Don Kaveen",
+        "creditUrl": "https://unsplash.com/@donkaveen"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760067537346-520d3ecf9c29?w=1600&q=80",
+        "alt": "Bedroom with a single large window and timber-lined walls",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      }
+    ],
+    "description": "The same four-bedroom footprint as the beachfront houses at Katiet, set back into mature jungle on more land and for a quarter less. The trade is direct: an eight-minute tender ride replaces the view. Held under Hak Pakai, registered to the buyer and tied to their stay permit.",
+    "nearbyBreaks": [
+      {
+        "breakId": "lances-right",
+        "travelMinutes": 8,
+        "travelMode": "boat"
+      },
+      {
+        "breakId": "lances-left",
+        "travelMinutes": 18,
+        "travelMode": "boat"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.39,
+      "y": 0.37
+    }
+  },
+  {
+    "id": "mentawai-macaronis-bay-villa",
+    "title": "Bay Villa, North Pagai",
+    "destinationId": "mentawais",
+    "locality": "North Pagai",
+    "type": "villa",
+    "priceUsd": 500000,
+    "priceLocal": {
+      "amount": 8100000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "landSqm": 1500,
+    "builtSqm": 260,
+    "tenure": "hak-sewa",
+    "tenureYears": 30,
+    "features": [
+      "Five minutes by tender to Macaronis",
+      "Deep-water mooring",
+      "Sea-facing deck and sala",
+      "Diesel and solar hybrid power",
+      "Thirty-year Hak Sewa lease with extension option"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1770185998570-db739db7af47?w=1600&q=80",
+        "alt": "Aerial view of a sheltered bay with a small pool and beach frontage",
+        "credit": "Egor",
+        "creditUrl": "https://unsplash.com/@just4j0ke"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1605538108528-8b9be1168ad8?w=1600&q=80",
+        "alt": "Palms leaning over calm water in a protected island bay",
+        "credit": "Cauayan Island Resort",
+        "creditUrl": "https://unsplash.com/@cauayanislandresort"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1694333940202-b04aea330018?w=1600&q=80",
+        "alt": "Surfer standing at the water's edge reading the lineup",
+        "credit": "Shermin Ng",
+        "creditUrl": "https://unsplash.com/@shermin"
+      }
+    ],
+    "description": "Three bedrooms on the bay at Pasongan, with a deep-water mooring off the deck and Macaronis five minutes away by tender. The wave is the most workable in the chain, which makes this the one house here a mixed-ability family can actually use. Thirty-year Hak Sewa lease with a documented extension.",
+    "nearbyBreaks": [
+      {
+        "breakId": "macaronis",
+        "travelMinutes": 5,
+        "travelMode": "boat"
+      },
+      {
+        "breakId": "greenbush",
+        "travelMinutes": 40,
+        "travelMode": "boat"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.58,
+      "y": 0.62
+    }
+  },
+  {
+    "id": "mentawai-north-pagai-bay-land",
+    "title": "Bay Frontage Land, North Pagai",
+    "destinationId": "mentawais",
+    "locality": "North Pagai",
+    "type": "land",
+    "priceUsd": 200000,
+    "priceLocal": {
+      "amount": 3240000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "landSqm": 4000,
+    "builtSqm": 0,
+    "tenure": "hak-sewa",
+    "tenureYears": 25,
+    "features": [
+      "4,000 sqm with 60m of bay frontage",
+      "Cleared and levelled building platform",
+      "Existing jetty footings",
+      "Fresh water bore on site",
+      "Twenty-five-year Hak Sewa lease"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1750068418058-80db4f76e863?w=1600&q=80",
+        "alt": "Coastal cliffs and low islands meeting open sea under high cloud",
+        "credit": "Maximus Beaumont",
+        "creditUrl": "https://unsplash.com/@mllewelynb"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1544644181-c0dff86a5a93?w=1600&q=80",
+        "alt": "Cleared grass ground running back to a standing tree line",
+        "credit": "Sebastian Pena Lambarri",
+        "creditUrl": "https://unsplash.com/@sebaspenalambarri"
+      }
+    ],
+    "description": "Four thousand square metres with sixty metres of bay frontage, cleared, levelled and already served by a bore and jetty footings. It is the rarest thing in the chain: a buildable, leased, water-fronting parcel within reach of Macaronis. Twenty-five-year Hak Sewa lease.",
+    "nearbyBreaks": [
+      {
+        "breakId": "macaronis",
+        "travelMinutes": 12,
+        "travelMode": "boat"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.66,
+      "y": 0.54
+    }
+  },
+  {
+    "id": "mentawai-greenbush-house",
+    "title": "Greenbush House, South Pagai",
+    "destinationId": "mentawais",
+    "locality": "South Pagai",
+    "type": "villa",
+    "priceUsd": 330000,
+    "priceLocal": {
+      "amount": 5346000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "landSqm": 1200,
+    "builtSqm": 180,
+    "tenure": "hak-pakai",
+    "features": [
+      "Ten minutes by boat to Greenbush",
+      "Timber-framed two-bedroom plan",
+      "Generator and solar hybrid power",
+      "Boat shed and fuel store",
+      "Covered sea-facing deck"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1773423210135-26498c7868f8?w=1600&q=80",
+        "alt": "Small timber house half hidden among trees on an island shoreline",
+        "credit": "Michael Schreiber",
+        "creditUrl": "https://unsplash.com/@schreibmich"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1556316782-1ec9b261c156?w=1600&q=80",
+        "alt": "Heavy ocean swell folding over deep water offshore",
+        "credit": "jordan ramos",
+        "creditUrl": "https://unsplash.com/@jordanramos"
+      }
+    ],
+    "description": "A two-bedroom timber house on the south-west shore of South Pagai, ten minutes by boat from one of the heaviest left-handers in Indonesia. Modest by design, with the budget spent on power, fuel storage and a boat shed rather than finishes. Registered under Hak Pakai.",
+    "nearbyBreaks": [
+      {
+        "breakId": "greenbush",
+        "travelMinutes": 10,
+        "travelMode": "boat"
+      },
+      {
+        "breakId": "macaronis",
+        "travelMinutes": 35,
+        "travelMode": "boat"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.75,
+      "y": 0.85
+    }
+  },
+  {
+    "id": "mentawai-south-pagai-lodge",
+    "title": "Surf Lodge, South Pagai",
+    "destinationId": "mentawais",
+    "locality": "South Pagai",
+    "type": "villa",
+    "priceUsd": 400000,
+    "priceLocal": {
+      "amount": 6480000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "landSqm": 2500,
+    "builtSqm": 420,
+    "tenure": "pt-pma",
+    "features": [
+      "Four twin cabins around a central mess",
+      "Commercial kitchen and cold store",
+      "Two tenders and a dive compressor",
+      "Workshop and ding-repair bay",
+      "Held through a PT PMA"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1709025589488-7aa43647bf69?w=1600&q=80",
+        "alt": "Group travelling upriver in a longboat through island channels",
+        "credit": "Muhammad Adin Samudro",
+        "creditUrl": "https://unsplash.com/@muhammad_adin_samudro"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1630037307650-e55dc228b3f9?w=1600&q=80",
+        "alt": "Palms and planting enclosing a shaded courtyard",
+        "credit": "Jernej Graj",
+        "creditUrl": "https://unsplash.com/@jernejgraj"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1643266421634-467f26f84b56?w=1600&q=80",
+        "alt": "Communal living room with simple furniture and a round wall mirror",
+        "credit": "Don Kaveen",
+        "creditUrl": "https://unsplash.com/@donkaveen"
+      }
+    ],
+    "description": "A working surf lodge on 2,500 square metres inland of the Greenbush coast: four twin cabins, a commercial kitchen and a mess hall built to feed sixteen. It is a business as much as a house, sold with two tenders and the workshop already fitted out. Held through a PT PMA.",
+    "nearbyBreaks": [
+      {
+        "breakId": "greenbush",
+        "travelMinutes": 18,
+        "travelMode": "boat"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.83,
+      "y": 0.76
+    }
+  },
+  {
+    "id": "mentawai-siberut-island-estate",
+    "title": "Island Estate, Siberut",
+    "destinationId": "mentawais",
+    "locality": "Siberut",
+    "type": "estate",
+    "priceUsd": 1200000,
+    "priceLocal": {
+      "amount": 19440000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 6,
+    "bathrooms": 7,
+    "landSqm": 6000,
+    "builtSqm": 700,
+    "tenure": "pt-pma",
+    "features": [
+      "6,000 sqm with 120m of reef frontage",
+      "Main house and three guest bures",
+      "Deep-water mooring for a 20m charter boat",
+      "Full off-grid power, water and waste treatment",
+      "Resident caretaker's cottage"
+    ],
+    "seaView": true,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1776762893024-890728937eab?w=1600&q=80",
+        "alt": "Aerial view of separate pavilions arranged along a reef shoreline",
+        "credit": "Antonio Araujo",
+        "creditUrl": "https://unsplash.com/@antonioaaaraujo"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1758717152007-6a2eb7299409?w=1600&q=80",
+        "alt": "Timber structures on stilts above clear turquoise reef water",
+        "credit": "Haris khan",
+        "creditUrl": "https://unsplash.com/@hariskhan488"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1769679892028-8eeffb87a8d6?w=1600&q=80",
+        "alt": "Green island hillside dropping to a calm blue channel",
+        "credit": "Eirik Skarstein",
+        "creditUrl": "https://unsplash.com/@eskarstein"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1760067538083-b9d87cd6706c?w=1600&q=80",
+        "alt": "Guest bedroom with wide glazing onto forest and morning light",
+        "credit": "Alef Morais",
+        "creditUrl": "https://unsplash.com/@alef_visuals"
+      }
+    ],
+    "description": "Six thousand square metres on the east side of Siberut, with a main house, three guest bures and a hundred and twenty metres of reef frontage. The mooring takes a twenty-metre charter boat, which is what puts Bankvaults and Rifles inside a morning. Fully off-grid and held through a PT PMA.",
+    "nearbyBreaks": [
+      {
+        "breakId": "bankvaults",
+        "travelMinutes": 12,
+        "travelMode": "boat"
+      },
+      {
+        "breakId": "rifles",
+        "travelMinutes": 25,
+        "travelMode": "boat"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.13,
+      "y": 0.1
+    }
+  },
+  {
+    "id": "mentawai-siberut-forest-land",
+    "title": "Forest Land, Siberut",
+    "destinationId": "mentawais",
+    "locality": "Siberut",
+    "type": "land",
+    "priceUsd": 110000,
+    "priceLocal": {
+      "amount": 1782000000,
+      "currency": "IDR"
+    },
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "landSqm": 8000,
+    "builtSqm": 0,
+    "tenure": "hak-sewa",
+    "tenureYears": 25,
+    "features": [
+      "8,000 sqm of surveyed forest land",
+      "Vehicle track to the boundary",
+      "Spring-fed fresh water on site",
+      "Twenty minutes by road to the harbour",
+      "Twenty-five-year Hak Sewa lease"
+    ],
+    "seaView": false,
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1552301726-af49f3010981?w=1600&q=80",
+        "alt": "Spring-fed waterfall running through dense standing forest",
+        "credit": "Florian GIORGIO",
+        "creditUrl": "https://unsplash.com/@fgiorgio"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1591632426591-79b659aa616e?w=1600&q=80",
+        "alt": "Forested ridge falling away toward the sea under scattered cloud",
+        "credit": "Mahmud Ahsan",
+        "creditUrl": "https://unsplash.com/@mahmudahsan"
+      }
+    ],
+    "description": "Eight thousand square metres of surveyed forest inland of the Siberut harbour road, with a spring on site and a vehicle track to the boundary. There is no view and no power; there is water, access and a title, which on this island is the hard part. Twenty-five-year Hak Sewa lease.",
+    "nearbyBreaks": [
+      {
+        "breakId": "rifles",
+        "travelMinutes": 35,
+        "travelMode": "boat"
+      }
+    ],
+    "mapPoint": {
+      "x": 0.22,
+      "y": 0.17
+    }
+  }
+]

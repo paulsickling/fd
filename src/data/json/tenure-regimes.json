@@ -1,0 +1,68 @@
+[
+  {
+    "countryCode": "ID",
+    "country": "Indonesia",
+    "types": [
+      {
+        "id": "hak-pakai",
+        "label": "Hak Pakai (Right to Use)",
+        "foreignerEligible": true,
+        "typicalYears": 30,
+        "plainEnglish": "A title registered in your own name as a foreign individual, giving you the right to use and build on the land. It is the only direct title a foreigner can hold in Indonesia: Hak Milik, true freehold, is constitutionally reserved for Indonesian citizens and no individual structure opens it to you.",
+        "riskNote": "Hak Pakai is bound to your immigration status by design. The title exists because you hold qualifying Indonesian residency, so if that visa lapses or is refused on renewal, the consequence is not an administrative inconvenience: your right to the property itself is at risk. Treat visa continuity as part of maintaining the asset, on the same footing as paying the land tax.",
+        "securityRating": 3
+      },
+      {
+        "id": "hak-sewa",
+        "label": "Hak Sewa (Leasehold)",
+        "foreignerEligible": true,
+        "typicalYears": 25,
+        "plainEnglish": "A lease over land you do not own, typically written for 25 to 30 years with options to extend. It is the most common structure in the Bali villa market because it is the quickest and cheapest to put in place, and it is what most advertised villa prices are actually buying.",
+        "riskNote": "Hak Sewa carries less formal legal protection than Hak Pakai: it is a contract over land rather than a title in your name. The extension options are commercial terms agreed with the landowner, so what the lease is worth in year 24 depends on who owns that land by then and what they are willing to accept. Price it as a wasting asset with a known end date, not as ownership, and read the extension clause before the brochure.",
+        "securityRating": 2
+      },
+      {
+        "id": "pt-pma",
+        "label": "PT PMA (Foreign-Owned Company)",
+        "foreignerEligible": true,
+        "typicalYears": 30,
+        "plainEnglish": "A foreign-owned Indonesian company holds the property title and you own the company. This is the route to what is usually described as effective freehold ownership for a foreigner in Indonesia, and it is the structure used for anything with an income stream attached.",
+        "riskNote": "The word carrying the weight here is effective. You do not own the land; an Indonesian company you control does, and that company is a live business with licensing, reporting, tax filing and capital obligations that continue for every year you hold the villa. Let the PT PMA drift out of compliance and the structure underneath your house is what fails, not the house. It is the strongest foreign route in Indonesia and also the only one with a permanent running cost.",
+        "securityRating": 4
+      }
+    ]
+  },
+  {
+    "countryCode": "TH",
+    "country": "Thailand",
+    "types": [
+      {
+        "id": "th-leasehold-30",
+        "label": "Registered 30-Year Leasehold",
+        "foreignerEligible": true,
+        "typicalYears": 30,
+        "plainEnglish": "The standard structure for a foreign buyer of a Thai villa: a 30-year lease of the land registered at the Land Office, while you own the building standing on it outright. Freehold land is not available to a foreigner, so this is the default the market is built around.",
+        "riskNote": "The 30+30+30 you will see advertised is not what the law gives you. The Thai Supreme Court has ruled that automatic renewal clauses are not legally enforceable, which makes terms two and three a contractual promise from the current landowner rather than a right you can compel. What you are buying with certainty is thirty years. Everything past that depends on the goodwill, the solvency and the identity of whoever holds the land at renewal, and none of those are things you control.",
+        "securityRating": 2
+      },
+      {
+        "id": "th-company",
+        "label": "Thai Limited Company",
+        "foreignerEligible": true,
+        "typicalYears": null,
+        "plainEnglish": "A Thai limited company holds the land freehold and you hold your position through that company. It is the alternative to the 30-year lease for a foreigner buying land and a villa, and it is chosen precisely because it has no thirty-year clock ticking on it.",
+        "riskNote": "This route is indirect, and that is the whole of the risk. The freehold title sits with a Thai legal entity, so what you actually hold is a position in a company that has to be kept alive, funded and correctly administered for as long as you own the house. It is a workaround for the fact that a foreigner cannot hold Thai land, not a substitute for holding it, and this dataset's research names exactly one genuinely secure freehold route for a foreigner in Thailand: the condominium quota, not this. Price it accordingly.",
+        "securityRating": 2
+      },
+      {
+        "id": "th-condo-foreign-quota",
+        "label": "Condominium Freehold (49% Foreign Quota)",
+        "foreignerEligible": true,
+        "typicalYears": null,
+        "plainEnglish": "Genuine freehold ownership of a condominium unit with a chanote title deed issued in your own name, held within the 49 percent of the building's total floor area that may be foreign-owned. It is legally secure and freely transferable, and it is the single most secure route to ownership in either country covered here.",
+        "riskNote": "The title is not the thing to worry about; the arithmetic is. The 49 percent is measured against the building's total floor area, so your unit is available to you only while that specific building still has quota left. Once it is full, the identical unit on the next floor can be sold to a Thai buyer or leased to you but not sold to you freehold, and on resale your own buyer pool narrows to the same constraint. Confirm the remaining quota for that building, in writing, before you commit.",
+        "securityRating": 5
+      }
+    ]
+  }
+]
