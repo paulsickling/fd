@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { SiteHeader } from '@/components/SiteHeader';
 import { DestinationsHome } from '@/features/destinations/DestinationsHome';
 import { DestinationPage } from '@/features/destinations/DestinationPage';
+import { PropertySearchPage } from '@/features/search/PropertySearchPage';
 
 /**
  * Route table. Destination comes before property in the hierarchy — that ordering is the
@@ -19,6 +20,7 @@ export function AppRoutes() {
       <Routes>
         <Route path="/" element={<DestinationsHome />} />
         <Route path="/destinations/:destinationId" element={<DestinationPage />} />
+        <Route path="/properties" element={<PropertySearchPage />} />
       </Routes>
     </div>
   );

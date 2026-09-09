@@ -9,15 +9,8 @@
 
 import type { JsonSeed } from '@/data/json/JsonDataRepository';
 import type { FetchLike } from '@/data/remote/RemoteDataRepository';
-import type {
-  BreakDirection,
-  BreakType,
-  PropertyType,
-  SkillLevel,
-  TenureTypeId,
-} from '@/domain/types';
 import { filterProperties, sortProperties } from '@/domain/filters';
-import type { PropertySearchCriteria, PropertySort } from '@/domain/filters';
+import { criteriaFromSearchParams } from '@/domain/criteriaUrl';
 
 const BASE = 'https://api.example.test';
 
@@ -30,44 +23,6 @@ function json(body: unknown, status = 200) {
 }
 
 const notFound = () => json({ error: 'not found' }, 404);
-
-function num(params: URLSearchParams, key: string): number | undefined {
-  const raw = params.get(key);
-  return raw === null ? undefined : Number(raw);
-}
-
-function csv<T extends string>(params: URLSearchParams, key: string): readonly T[] | undefined {
-  const raw = params.get(key);
-  return raw === null ? undefined : (raw.split(',') as T[]);
-}
-
-export function parseCriteria(params: URLSearchParams): PropertySearchCriteria {
-  const seaViewRaw = params.get('seaView');
-  return {
-    ...(params.get('destinationId') !== null && { destinationId: params.get('destinationId')! }),
-    ...(num(params, 'minPriceUsd') !== undefined && { minPriceUsd: num(params, 'minPriceUsd')! }),
-    ...(num(params, 'maxPriceUsd') !== undefined && { maxPriceUsd: num(params, 'maxPriceUsd')! }),
-    ...(num(params, 'minBedrooms') !== undefined && { minBedrooms: num(params, 'minBedrooms')! }),
-    ...(seaViewRaw !== null && { seaView: seaViewRaw === 'true' }),
-    ...(params.get('breakDirection') !== null && {
-      breakDirection: params.get('breakDirection') as BreakDirection,
-    }),
-    ...(params.get('skill') !== null && { skill: params.get('skill') as SkillLevel }),
-    ...(num(params, 'maxTravelMinutes') !== undefined && {
-      maxTravelMinutes: num(params, 'maxTravelMinutes')!,
-    }),
-    ...(params.get('sort') !== null && { sort: params.get('sort') as PropertySort }),
-    ...(csv<PropertyType>(params, 'propertyTypes') && {
-      propertyTypes: csv<PropertyType>(params, 'propertyTypes')!,
-    }),
-    ...(csv<TenureTypeId>(params, 'tenureTypes') && {
-      tenureTypes: csv<TenureTypeId>(params, 'tenureTypes')!,
-    }),
-    ...(csv<BreakType>(params, 'breakTypes') && {
-      breakTypes: csv<BreakType>(params, 'breakTypes')!,
-    }),
-  };
-}
 
 export interface FakeRemoteBackend {
   readonly baseUrl: string;
@@ -95,7 +50,7 @@ export function createFakeRemoteBackend(seed: JsonSeed): FakeRemoteBackend {
       );
     }
     if (path === '/properties') {
-      return json(filterProperties(seed.properties, seed.breaks, parseCriteria(params)));
+      return json(filterProperties(seed.properties, seed.breaks, criteriaFromSearchParams(params)));
     }
     if (path === '/tenure-regimes') return json(seed.tenureRegimes);
 

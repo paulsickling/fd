@@ -13,6 +13,7 @@
 
 import type { DataRepository, PropertySearchCriteria } from '../DataRepository';
 import type { Destination, Property, SurfBreak, TenureRegime } from '@/domain/types';
+import { criteriaToSearchParams } from '@/domain/criteriaUrl';
 
 export type FetchLike = (
   input: string,
@@ -54,28 +55,13 @@ export class RemoteDataRepository implements DataRepository {
   }
 
   /**
-   * The criteria object becomes query parameters here. This is the line where "filtering
-   * happens behind the repository" stops being a slogan: under JSON it is an in-memory
-   * predicate, under REST it is the server's problem, and the caller cannot tell.
+   * The criteria object becomes query parameters here, using the same wire format the
+   * browser URL uses (src/domain/criteriaUrl). This is the line where "filtering happens
+   * behind the repository" stops being a slogan: under JSON it is an in-memory predicate,
+   * under REST it is the server's problem, and the caller cannot tell.
    */
   static toQueryParams(criteria: PropertySearchCriteria): URLSearchParams {
-    const params = new URLSearchParams();
-    const setIf = (key: string, value: string | number | boolean | undefined) => {
-      if (value !== undefined) params.set(key, String(value));
-    };
-    setIf('destinationId', criteria.destinationId);
-    setIf('minPriceUsd', criteria.minPriceUsd);
-    setIf('maxPriceUsd', criteria.maxPriceUsd);
-    setIf('minBedrooms', criteria.minBedrooms);
-    setIf('seaView', criteria.seaView);
-    setIf('breakDirection', criteria.breakDirection);
-    setIf('skill', criteria.skill);
-    setIf('maxTravelMinutes', criteria.maxTravelMinutes);
-    setIf('sort', criteria.sort);
-    if (criteria.propertyTypes?.length) params.set('propertyTypes', criteria.propertyTypes.join(','));
-    if (criteria.tenureTypes?.length) params.set('tenureTypes', criteria.tenureTypes.join(','));
-    if (criteria.breakTypes?.length) params.set('breakTypes', criteria.breakTypes.join(','));
-    return params;
+    return criteriaToSearchParams(criteria);
   }
 
   async listDestinations(): Promise<Destination[]> {
